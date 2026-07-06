@@ -17,7 +17,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%232C2626'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='56' fill='%23E6E1C6' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"RealEstateAgent","name":"Perla Lutchman | Luxury Real Estate","description":"Luxury residential and pre-construction real estate advisor in Miami.","url":"https://mrtrini.github.io/PerlaWebsite/real-estate.html","image":"https://mrtrini.github.io/PerlaWebsite/assets/images/re-1.jpg","areaServed":["Brickell","Edgewater","Miami Beach","Doral","Kendall","Wynwood"],"address":{"@type":"PostalAddress","addressLocality":"Miami","addressRegion":"FL","addressCountry":"US"},"telephone":"+1-786-724-5779","parentOrganization":{"@type":"Organization","name":"Avanti Way Realty LLC"},"sameAs":["https://instagram.com/perla.lutchman","https://www.linkedin.com/in/perla-lutchman"]}
+{"@context":"https://schema.org","@type":"RealEstateAgent","name":"Perla Lutchman | Luxury Real Estate","description":"Luxury residential and pre-construction real estate advisor in Miami.","url":"https://mrtrini.github.io/PerlaWebsite/real-estate.html","image":"https://mrtrini.github.io/PerlaWebsite/assets/images/re-1.jpg","areaServed":["Brickell","Edgewater","Downtown Miami","Doral","Biscayne Park"],"address":{"@type":"PostalAddress","addressLocality":"Miami","addressRegion":"FL","addressCountry":"US"},"telephone":"+1-786-724-5779","parentOrganization":{"@type":"Organization","name":"Avanti Way Realty LLC"},"sameAs":["https://instagram.com/perla.lutchman","https://www.linkedin.com/in/perla-lutchman"]}
 </script>
 <style>
   :root{
@@ -111,6 +111,19 @@
   @media(max-width:760px){.grid3{grid-template-columns:1fr 1fr}}
   @media(max-width:480px){.grid3{grid-template-columns:1fr}}
 
+  /* Area photo tiles */
+  .tiles{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem}
+  .tile{position:relative;display:block;aspect-ratio:4/3;overflow:hidden;background:var(--bar)}
+  .tile picture{position:absolute;inset:0}
+  .tile img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
+  .tile::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(44,38,38,0) 38%,rgba(44,38,38,.8) 100%)}
+  .tile:hover img{transform:scale(1.06)}
+  .tile-cap{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:1rem 1.1rem;color:#fff}
+  .tname{display:block;font-family:var(--title-f);font-size:1.15rem;letter-spacing:.03em}
+  .tdesc{display:block;font-size:.74rem;color:#F1ECE6;opacity:.92;margin-top:.15rem}
+  @media(max-width:1000px){.tiles{grid-template-columns:repeat(3,1fr)}}
+  @media(max-width:620px){.tiles{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:360px){.tiles{grid-template-columns:1fr}}
   .stats{display:flex;gap:2.5rem;padding-top:.5rem;flex-wrap:wrap}
   .stats b{font-family:var(--title-f);font-size:2.2rem;font-weight:400;display:block;line-height:1}
   .stats small{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
@@ -218,13 +231,47 @@
     <span class="bar-label">Miami Areas</span>
     <h2 class="sec-title">Where I represent buyers &amp; sellers.</h2>
   </div>
-  <div class="grid3 reveal">
-    <div class="place"><div class="k">Brickell</div><div class="v">Miami's financial district &amp; skyline living</div></div>
-    <div class="place"><div class="k">Edgewater</div><div class="v">Waterfront towers on Biscayne Bay</div></div>
-    <div class="place"><div class="k">Miami Beach</div><div class="v">Iconic island lifestyle &amp; oceanfront</div></div>
-    <div class="place"><div class="k">Doral</div><div class="v">Modern residential &amp; family communities</div></div>
-    <div class="place"><div class="k">Kendall</div><div class="v">Established suburban value</div></div>
-    <div class="place"><div class="k">Wynwood</div><div class="v">Arts district energy &amp; new development</div></div>
+  <div class="tiles reveal">
+    <a class="tile" href="#contact">
+      <picture>
+        <source type="image/avif" srcset="assets/images/areas/brickell.avif">
+        <source type="image/webp" srcset="assets/images/areas/brickell.webp">
+        <img src="assets/images/areas/brickell.webp" alt="Brickell, Miami" width="1448" height="1086" loading="lazy" decoding="async">
+      </picture>
+      <span class="tile-cap"><span class="tname">Brickell</span><span class="tdesc">Financial district &amp; skyline living</span></span>
+    </a>
+    <a class="tile" href="#contact">
+      <picture>
+        <source type="image/avif" srcset="assets/images/areas/edgewater.avif">
+        <source type="image/webp" srcset="assets/images/areas/edgewater.webp">
+        <img src="assets/images/areas/edgewater.webp" alt="Edgewater, Miami" width="1448" height="1086" loading="lazy" decoding="async">
+      </picture>
+      <span class="tile-cap"><span class="tname">Edgewater</span><span class="tdesc">Waterfront towers on Biscayne Bay</span></span>
+    </a>
+    <a class="tile" href="#contact">
+      <picture>
+        <source type="image/avif" srcset="assets/images/areas/downtown-miami.avif">
+        <source type="image/webp" srcset="assets/images/areas/downtown-miami.webp">
+        <img src="assets/images/areas/downtown-miami.webp" alt="Downtown Miami" width="1448" height="1086" loading="lazy" decoding="async">
+      </picture>
+      <span class="tile-cap"><span class="tname">Downtown Miami</span><span class="tdesc">Urban core, culture &amp; waterfront</span></span>
+    </a>
+    <a class="tile" href="#contact">
+      <picture>
+        <source type="image/avif" srcset="assets/images/areas/doral.avif">
+        <source type="image/webp" srcset="assets/images/areas/doral.webp">
+        <img src="assets/images/areas/doral.webp" alt="Doral, Miami" width="1448" height="1086" loading="lazy" decoding="async">
+      </picture>
+      <span class="tile-cap"><span class="tname">Doral</span><span class="tdesc">Modern residential communities</span></span>
+    </a>
+    <a class="tile" href="#contact">
+      <picture>
+        <source type="image/avif" srcset="assets/images/areas/biscayne-park.avif">
+        <source type="image/webp" srcset="assets/images/areas/biscayne-park.webp">
+        <img src="assets/images/areas/biscayne-park.webp" alt="Biscayne Park, Miami" width="1448" height="1086" loading="lazy" decoding="async">
+      </picture>
+      <span class="tile-cap"><span class="tname">Biscayne Park</span><span class="tdesc">Leafy village charm</span></span>
+    </a>
   </div>
 </section>
 

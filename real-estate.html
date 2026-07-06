@@ -124,6 +124,11 @@
   @media(max-width:1000px){.tiles{grid-template-columns:repeat(3,1fr)}}
   @media(max-width:620px){.tiles{grid-template-columns:repeat(2,1fr)}}
   @media(max-width:360px){.tiles{grid-template-columns:1fr}}
+  /* Wider development tiles (16:9) */
+  .dev-tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+  .dev-tiles .tile{aspect-ratio:16/9}
+  @media(max-width:900px){.dev-tiles{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.dev-tiles{grid-template-columns:1fr}}
   .stats{display:flex;gap:2.5rem;padding-top:.5rem;flex-wrap:wrap}
   .stats b{font-family:var(--title-f);font-size:2.2rem;font-weight:400;display:block;line-height:1}
   .stats small{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
@@ -282,13 +287,55 @@
       <h2 class="sec-title">Pre-construction opportunities.</h2>
       <p class="muted">Early access to Miami's most anticipated addresses — ideal for lifestyle buyers and investors alike.</p>
     </div>
-    <div class="grid3 reveal">
-      <div class="place"><div class="k">Elle Residences</div><div class="v">Pre-construction</div></div>
-      <div class="place"><div class="k">Parkside</div><div class="v">Pre-construction</div></div>
-      <div class="place"><div class="k">The Standard</div><div class="v">Pre-construction</div></div>
-      <div class="place"><div class="k">Domus Brickell</div><div class="v">Pre-construction</div></div>
-      <div class="place"><div class="k">Nomad</div><div class="v">Pre-construction</div></div>
-      <div class="place"><div class="k">Viceroy</div><div class="v">Pre-construction</div></div>
+    <div class="dev-tiles reveal">
+      <a class="tile" href="#contact">
+        <picture>
+          <source type="image/avif" srcset="assets/images/developments/elle-residences-miami.avif">
+          <source type="image/webp" srcset="assets/images/developments/elle-residences-miami.webp">
+          <img src="assets/images/developments/elle-residences-miami.webp" alt="Elle Residences, Edgewater" width="1672" height="941" loading="lazy" decoding="async">
+        </picture>
+        <span class="tile-cap"><span class="tname">Elle Residences</span><span class="tdesc">Pre-construction &middot; Edgewater</span></span>
+      </a>
+      <a class="tile" href="#contact">
+        <picture>
+          <source type="image/avif" srcset="assets/images/developments/parkside-brickell.avif">
+          <source type="image/webp" srcset="assets/images/developments/parkside-brickell.webp">
+          <img src="assets/images/developments/parkside-brickell.webp" alt="Parkside, Brickell" width="1672" height="941" loading="lazy" decoding="async">
+        </picture>
+        <span class="tile-cap"><span class="tname">Parkside</span><span class="tdesc">Pre-construction &middot; Brickell</span></span>
+      </a>
+      <a class="tile" href="#contact">
+        <picture>
+          <source type="image/avif" srcset="assets/images/developments/the-standard-residences-brickell.avif">
+          <source type="image/webp" srcset="assets/images/developments/the-standard-residences-brickell.webp">
+          <img src="assets/images/developments/the-standard-residences-brickell.webp" alt="The Standard Residences, Brickell" width="1672" height="941" loading="lazy" decoding="async">
+        </picture>
+        <span class="tile-cap"><span class="tname">The Standard</span><span class="tdesc">Pre-construction &middot; Brickell</span></span>
+      </a>
+      <a class="tile" href="#contact">
+        <picture>
+          <source type="image/avif" srcset="assets/images/developments/domus-brickell-park.avif">
+          <source type="image/webp" srcset="assets/images/developments/domus-brickell-park.webp">
+          <img src="assets/images/developments/domus-brickell-park.webp" alt="Domus Brickell Park" width="1672" height="941" loading="lazy" decoding="async">
+        </picture>
+        <span class="tile-cap"><span class="tname">Domus Brickell Park</span><span class="tdesc">Pre-construction &middot; Brickell</span></span>
+      </a>
+      <a class="tile" href="#contact">
+        <picture>
+          <source type="image/avif" srcset="assets/images/developments/nomad-residences-wynwood.avif">
+          <source type="image/webp" srcset="assets/images/developments/nomad-residences-wynwood.webp">
+          <img src="assets/images/developments/nomad-residences-wynwood.webp" alt="Nomad Residences, Wynwood" width="1672" height="941" loading="lazy" decoding="async">
+        </picture>
+        <span class="tile-cap"><span class="tname">Nomad Residences</span><span class="tdesc">Pre-construction &middot; Wynwood</span></span>
+      </a>
+      <a class="tile" href="#contact">
+        <picture>
+          <source type="image/avif" srcset="assets/images/developments/viceroy-brickell-residences.avif">
+          <source type="image/webp" srcset="assets/images/developments/viceroy-brickell-residences.webp">
+          <img src="assets/images/developments/viceroy-brickell-residences.webp" alt="Viceroy Brickell Residences" width="1672" height="941" loading="lazy" decoding="async">
+        </picture>
+        <span class="tile-cap"><span class="tname">Viceroy</span><span class="tdesc">Pre-construction &middot; Brickell</span></span>
+      </a>
     </div>
   </div>
 </section>

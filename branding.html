@@ -10,13 +10,14 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Perla Lutchman | Brand Strategy &amp; Consulting">
 <meta property="og:description" content="Building businesses with purpose. Creating brands with intention.">
-<meta property="og:image" content="assets/images/brand-1.jpg">
+<meta property="og:image" content="assets/images/brand-hero.png">
+<link rel="canonical" href="https://mrtrini.github.io/PerlaWebsite/branding.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alice&family=Tenor+Sans&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%2311100E'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='58' fill='%23B78161' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ProfessionalService","name":"Perla Lutchman | Brand Strategy","description":"Boutique brand strategy and business consulting: brand development, positioning, business strategy, and customer experience.","areaServed":"Worldwide","serviceType":["Brand Strategy","Brand Development","Positioning","Business Strategy","Customer Experience"],"founder":{"@type":"Person","name":"Perla Lutchman"},"priceRange":"$$$"}
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Perla Lutchman | Brand Strategy","description":"Boutique brand strategy and business consulting: brand development, positioning, business strategy, and customer experience.","url":"https://mrtrini.github.io/PerlaWebsite/branding.html","image":"https://mrtrini.github.io/PerlaWebsite/assets/images/brand-hero.png","areaServed":"Worldwide","serviceType":["Brand Strategy","Brand Development","Positioning","Business Strategy","Customer Experience"],"founder":{"@type":"Person","name":"Perla Lutchman"},"priceRange":"$$$","sameAs":["https://instagram.com/perla.lutchman","https://www.linkedin.com/in/perla-lutchman"]}
 </script>
 <style>
   :root{
@@ -179,12 +180,18 @@
   }
   .reveal{opacity:0;transform:translateY(24px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
   .reveal.in{opacity:1;transform:none}
-  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}html{scroll-behavior:auto}}
+  .skip-link{position:absolute;left:-999px;top:0;z-index:100;background:var(--clay);color:#11100E;padding:.7rem 1.1rem;font-family:var(--title-f);letter-spacing:.1em;text-transform:uppercase;font-size:12px}
+  .skip-link:focus{left:.5rem;top:.5rem}
+  .visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+  a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--clay);outline-offset:2px;border-radius:2px}
 </style>
+<noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<nav class="nav-v2" id="nav">
+<nav class="nav-v2" id="nav" aria-label="Primary">
   <div class="wrap nav-in">
     <a href="#home" class="logo-stack"><span class="l1">PERLA</span><span class="l2">LUTCHMAN</span></a>
     <div class="nav-links" id="navLinks">
@@ -195,10 +202,11 @@
       <a href="#contact">Contact</a>
     </div>
     <a href="#contact" class="btn-outline sm nav-cta-desktop">Let's Connect</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
+<main id="main">
 <header id="home" class="hero-v2">
   <div class="hero-backdrop"><img src="assets/images/brand-hero.png" alt="Perla Lutchman, Brand Strategist"></div>
   <div class="hero-scrim"></div>
@@ -252,7 +260,7 @@
       <h2 class="sec-title" style="color:#fff">Every successful brand starts somewhere.</h2>
       <p class="muted" style="margin-top:.8rem;max-width:52rem">Whether you're exploring a new idea, launching your first business, refining your positioning, or preparing to scale — every stage requires a different strategy.</p>
     </div>
-    <div class="jtrack reveal" role="tablist">
+    <div class="jtrack reveal">
       <button class="jtab active" data-s="0"><span class="jn">01</span> Vision</button>
       <button class="jtab" data-s="1"><span class="jn">02</span> Launch</button>
       <button class="jtab" data-s="2"><span class="jn">03</span> Momentum</button>
@@ -290,26 +298,32 @@
       <h2 class="sec-title">Let's build something meaningful together.</h2>
       <p class="muted" style="margin-top:1rem;max-width:26rem">Every person and every business has a unique story worth telling. Tell me a little about yours and where you are in your journey.</p>
       <div class="contact-links">
-        <a href="https://wa.me/17867245779" target="_blank" rel="noopener"><span class="d">&#9742;</span> (786) 724-5779</a>
-        <a href="https://instagram.com/perla.lutchman" target="_blank" rel="noopener"><span class="d">IG</span> @perla.lutchman</a>
-        <a href="https://www.linkedin.com/in/perla-lutchman" target="_blank" rel="noopener"><span class="d">in</span> LinkedIn</a>
-        <a href="https://linktr.ee/perla.lutchman" target="_blank" rel="noopener"><span class="d">&#128279;</span> Linktree</a>
+        <a href="https://wa.me/17867245779" target="_blank" rel="noopener"><span class="d" aria-hidden="true">&#9742;</span> (786) 724-5779</a>
+        <a href="https://instagram.com/perla.lutchman" target="_blank" rel="noopener"><span class="d" aria-hidden="true">IG</span> @perla.lutchman</a>
+        <a href="https://www.linkedin.com/in/perla-lutchman" target="_blank" rel="noopener"><span class="d" aria-hidden="true">in</span> LinkedIn</a>
+        <a href="https://linktr.ee/perla.lutchman" target="_blank" rel="noopener"><span class="d" aria-hidden="true">&#128279;</span> Linktree</a>
       </div>
     </div>
-    <form class="reveal" id="contactForm">
+    <form class="reveal" id="contactForm" aria-label="Contact Perla Lutchman about brand strategy">
       <div class="frow">
-        <input type="text" name="first" placeholder="First Name *" required>
-        <input type="text" name="last" placeholder="Last Name *" required>
+        <label class="visually-hidden" for="f-first">First name</label>
+        <input id="f-first" type="text" name="first" placeholder="First Name *" required autocomplete="given-name">
+        <label class="visually-hidden" for="f-last">Last name</label>
+        <input id="f-last" type="text" name="last" placeholder="Last Name *" required autocomplete="family-name">
       </div>
       <div class="frow">
-        <input type="email" name="email" placeholder="Email *" required>
-        <input type="tel" name="phone" placeholder="Phone">
+        <label class="visually-hidden" for="f-email">Email</label>
+        <input id="f-email" type="email" name="email" placeholder="Email *" required autocomplete="email">
+        <label class="visually-hidden" for="f-phone">Phone</label>
+        <input id="f-phone" type="tel" name="phone" placeholder="Phone" autocomplete="tel">
       </div>
-      <textarea rows="4" name="message" placeholder="Where are you in your journey — Vision, Launch, Momentum, Growth, or Legacy? Tell me about your goals."></textarea>
+      <label class="visually-hidden" for="f-msg">Tell me about your goals</label>
+      <textarea id="f-msg" rows="4" name="message" placeholder="Where are you in your journey — Vision, Launch, Momentum, Growth, or Legacy? Tell me about your goals."></textarea>
       <button type="submit" class="btn btn-clay" style="justify-content:center">Start a Conversation</button>
     </form>
   </div>
 </section>
+</main>
 
 <footer>
   <div class="wrap">
@@ -342,7 +356,7 @@
   function navScroll(){if(nav)nav.classList.toggle('solid',window.scrollY>60)}
   window.addEventListener('scroll',navScroll,{passive:true});navScroll();
   var t=document.getElementById('navToggle'),l=document.getElementById('navLinks');
-  if(t){t.addEventListener('click',function(){l.classList.toggle('open')});l.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){l.classList.remove('open')})})}
+  if(t){t.addEventListener('click',function(){var open=l.classList.toggle('open');t.setAttribute('aria-expanded',open?'true':'false');t.setAttribute('aria-label',open?'Close menu':'Open menu')});l.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){l.classList.remove('open');t.setAttribute('aria-expanded','false');t.setAttribute('aria-label','Open menu')})})}
   var tabs=document.querySelectorAll('.jtab'),panels=document.querySelectorAll('.jpanel'),auto=true,idx=0;
   function act(i){tabs.forEach(function(x,k){x.classList.toggle('active',k===i)});panels.forEach(function(p,k){p.classList.toggle('active',k===i)})}
   tabs.forEach(function(x,i){x.addEventListener('click',function(){auto=false;act(i)})});

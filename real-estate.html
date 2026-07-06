@@ -48,6 +48,28 @@
   .btn-ghost{background:transparent;color:var(--ink)}
   .btn-ghost:hover{background:var(--bar);color:var(--title)}
 
+  /* Full-bleed responsive hero banner */
+  .re-hero{position:relative;overflow:hidden;background:var(--bar)}
+  .re-hero .media{position:absolute;inset:0;z-index:0}
+  .re-hero .media picture{display:block;width:100%;height:100%}
+  .re-hero .media img{width:100%;height:100%;object-fit:cover;object-position:center}
+  .re-hero .scrim{position:absolute;inset:0;z-index:1;background:
+    linear-gradient(180deg,rgba(44,38,38,.5) 0%,rgba(44,38,38,.08) 20%,rgba(44,38,38,0) 44%,rgba(44,38,38,.4) 70%,rgba(44,38,38,.88) 100%)}
+  .re-hero .inner{position:relative;z-index:2;min-height:clamp(440px,64vh,720px);display:flex;flex-direction:column;
+    align-items:center;justify-content:flex-end;text-align:center;padding:0 clamp(1.25rem,4vw,2.5rem) clamp(2.4rem,6vh,4.5rem)}
+  .re-hero .eyebrow{font-family:var(--title-f);letter-spacing:.3em;text-transform:uppercase;font-size:12px;color:var(--title)}
+  .re-hero h1{font-family:var(--title-f);color:#fff;font-size:clamp(2rem,1.3rem+3vw,4rem);line-height:1.06;margin:.8rem 0 0;
+    text-shadow:0 2px 26px rgba(0,0,0,.55);max-width:20ch}
+  .re-hero .sub{color:#F3EEE9;margin-top:1rem;max-width:48ch;text-shadow:0 1px 14px rgba(0,0,0,.6)}
+  .re-hero .cta{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin-top:1.9rem}
+  .re-hero .btn-ghost{border-color:#fff;color:#fff;background:rgba(44,38,38,.25)}
+  .re-hero .btn-ghost:hover{background:#fff;color:var(--bar)}
+  @media(max-width:760px){
+    .re-hero .media img{object-position:22% center}
+    .re-hero .inner{min-height:clamp(420px,72vh,600px)}
+    .re-hero .scrim{background:linear-gradient(180deg,rgba(44,38,38,.5) 0%,rgba(44,38,38,.15) 30%,rgba(44,38,38,.45) 62%,rgba(44,38,38,.9) 100%)}
+  }
+
   /* NAV */
   nav{position:sticky;top:0;z-index:50;background:var(--bar);color:var(--title)}
   .nav-in{height:70px;display:flex;align-items:center;justify-content:space-between}
@@ -158,20 +180,25 @@
 </nav>
 
 <main id="main">
-<header id="home" class="wrap">
-  <div class="hero">
-    <div class="reveal">
-      <p class="eyebrow">Luxury Real Estate &bull; Miami</p>
-      <h1 class="display" style="margin-top:1rem">Invest Where the World Is Investing.</h1>
-      <p class="lead" style="margin-top:1.5rem">Miami isn't simply one of the fastest-growing luxury real estate markets — it's a global destination where lifestyle, business, and investment come together.</p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn">Schedule a Consultation</a>
-        <a href="#developments" class="btn btn-ghost">View Developments</a>
-      </div>
-    </div>
-    <div class="figure reveal"><img src="assets/images/re-1.jpg" alt="Perla Lutchman, Miami luxury real estate advisor"></div>
+<section id="home" class="re-hero">
+  <div class="media">
+    <picture>
+      <source type="image/avif" sizes="100vw" srcset="assets/images/perla-real-estate-hero-960w.avif 960w, assets/images/perla-real-estate-hero-1280w.avif 1280w, assets/images/perla-real-estate-hero-1600w.avif 1600w, assets/images/perla-real-estate-hero-1916w.avif 1916w">
+      <source type="image/webp" sizes="100vw" srcset="assets/images/perla-real-estate-hero-960w.webp 960w, assets/images/perla-real-estate-hero-1280w.webp 1280w, assets/images/perla-real-estate-hero-1600w.webp 1600w, assets/images/perla-real-estate-hero-1916w.webp 1916w">
+      <img src="assets/images/perla-real-estate-hero-1280w.webp" alt="Perla Lutchman with the Miami skyline at dusk" width="1916" height="821" fetchpriority="high" decoding="async">
+    </picture>
   </div>
-</header>
+  <div class="scrim" aria-hidden="true"></div>
+  <div class="inner">
+    <p class="eyebrow">Luxury Real Estate &bull; Miami</p>
+    <h1>Invest Where the World Is Investing.</h1>
+    <p class="sub">A global destination where lifestyle, business, and investment come together — with curated opportunities and trusted guidance.</p>
+    <div class="cta">
+      <a href="#contact" class="btn">Schedule a Consultation</a>
+      <a href="#developments" class="btn btn-ghost">View Developments</a>
+    </div>
+  </div>
+</section>
 
 <section id="real-estate" class="bg2">
   <div class="wrap split">

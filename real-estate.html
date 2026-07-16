@@ -157,7 +157,7 @@
   @media(max-width:860px){.contact{grid-template-columns:1fr}.frow{grid-template-columns:1fr}}
 
   footer{background:var(--bar);color:#cfc8b4;padding:3rem 0 2rem}
-  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2rem}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:2rem}
   .foot-grid .brand{color:var(--title)}
   .foot-links{list-style:none;padding:0;margin:.8rem 0 0;display:grid;gap:.5rem;font-size:.9rem}
   .foot-links a:hover{color:var(--title)}
@@ -165,7 +165,8 @@
   .foot-bottom{border-top:1px solid rgba(230,225,198,.2);margin-top:2rem;padding-top:1.3rem;font-size:.78rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem}
   .cross{background:var(--title);color:var(--bar);text-align:center;padding:.9rem;font-family:var(--title-f);letter-spacing:.12em;font-size:.8rem;text-transform:uppercase}
   .cross a{border-bottom:1px solid var(--bar)}
-  @media(max-width:760px){.foot-grid{grid-template-columns:1fr;gap:1.6rem}}
+  @media(max-width:760px){.foot-grid{grid-template-columns:1fr 1fr;gap:1.6rem}}
+  @media(max-width:460px){.foot-grid{grid-template-columns:1fr}}
 
   .skip-link{position:absolute;left:-999px;top:0;z-index:100;background:var(--bar);color:var(--title);padding:.7rem 1.1rem;font-family:var(--title-f);letter-spacing:.1em;text-transform:uppercase;font-size:12px}
   .skip-link:focus{left:.5rem;top:.5rem}
@@ -175,6 +176,36 @@
   .reveal{opacity:0;transform:translateY(24px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
   .reveal.in{opacity:1;transform:none}
   @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}html{scroll-behavior:auto}}
+
+  /* Option 5 — New Developments */
+  .dev-pill{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.5rem 1.4rem;background:linear-gradient(90deg,#EFE7D4,#E6E1C6);border:1px solid #D8CBA6;border-radius:999px;padding:.85rem 1.8rem;margin-bottom:2.2rem;text-align:center}
+  .dev-pill-l{font-family:var(--title-f);letter-spacing:.12em;text-transform:uppercase;font-size:.82rem;color:var(--bar)}
+  .dev-pill .star{color:#B79A57}
+  .dev-pill-r{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#6b5f43;border-left:1px solid #cbb98d;padding-left:1.4rem}
+  @media(max-width:640px){.dev-pill-r{border-left:0;padding-left:0}}
+  .feat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem}
+  @media(max-width:900px){.feat-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.feat-grid{grid-template-columns:1fr}}
+  .feat-card{position:relative;background:#fff;border:1px solid var(--line);display:flex;flex-direction:column;transition:.4s var(--ease)}
+  .feat-card:hover{transform:translateY(-5px);box-shadow:0 24px 50px -34px rgba(44,38,38,.5)}
+  .feat-badge{position:absolute;top:.8rem;left:.8rem;z-index:3;background:var(--bar);color:var(--title);font-family:var(--title-f);font-size:10px;letter-spacing:.16em;text-transform:uppercase;padding:.4rem .7rem}
+  .feat-media{display:block;position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--bar)}
+  .feat-media img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
+  .feat-card:hover .feat-media img{transform:scale(1.06)}
+  .feat-body{padding:1.05rem 1.05rem 1.25rem;display:flex;flex-direction:column;gap:.28rem;flex:1}
+  .feat-name{font-family:var(--title-f);font-size:1.12rem;letter-spacing:.02em;color:var(--ink)}
+  .feat-sub{font-size:.72rem;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+  .feat-btn{margin-top:.7rem;justify-content:center;background:var(--title);color:var(--bar)!important;border-color:var(--title);padding:.7rem 1rem;font-size:11px}
+  .feat-btn:hover{background:var(--bar);color:var(--title)!important}
+  .more-head{display:flex;align-items:center;gap:1rem;margin:2.6rem 0 1.4rem;color:var(--muted)}
+  .more-head::before,.more-head::after{content:"";flex:1;height:1px;background:var(--line)}
+  .more-head span{font-family:var(--title-f);letter-spacing:.18em;text-transform:uppercase;font-size:.72rem;white-space:nowrap}
+  .more-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+  @media(max-width:620px){.more-grid{grid-template-columns:1fr}}
+  .more-card{background:#fff;border:1px solid var(--line);padding:1.2rem 1.4rem;text-align:center;transition:.35s var(--ease)}
+  .more-card:hover{transform:translateY(-3px);box-shadow:0 18px 40px -30px rgba(44,38,38,.5)}
+  .more-name{display:block;font-family:var(--title-f);font-size:1.05rem;color:var(--ink)}
+  .more-sub{display:block;font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-top:.2rem}
 </style>
 <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
 </head>
@@ -223,58 +254,79 @@
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="bar-label">New Developments</span>
-      <h2 class="sec-title">Pre-construction opportunities.</h2>
+      <h2 class="sec-title">Pre-construction &amp; new-development opportunities.</h2>
       <p class="muted">Early access to Miami's most anticipated addresses, ideal for lifestyle buyers and investors alike.</p>
     </div>
-    <div class="dev-tiles reveal">
-      <a class="tile" href="#contact">
-        <picture>
-          <source type="image/avif" srcset="assets/images/developments/elle-residences-miami.avif">
-          <source type="image/webp" srcset="assets/images/developments/elle-residences-miami.webp">
-          <img src="assets/images/developments/elle-residences-miami.webp" alt="Elle Residences, Edgewater" width="1672" height="941" loading="lazy" decoding="async">
-        </picture>
-        <span class="tile-cap"><span class="tname">Elle Residences</span><span class="tdesc">Pre-construction &middot; Edgewater</span></span>
-      </a>
-      <a class="tile" href="#contact">
-        <picture>
-          <source type="image/avif" srcset="assets/images/developments/parkside-brickell.avif">
-          <source type="image/webp" srcset="assets/images/developments/parkside-brickell.webp">
-          <img src="assets/images/developments/parkside-brickell.webp" alt="Parkside, Brickell" width="1672" height="941" loading="lazy" decoding="async">
-        </picture>
-        <span class="tile-cap"><span class="tname">Parkside</span><span class="tdesc">Pre-construction &middot; Brickell</span></span>
-      </a>
-      <a class="tile" href="#contact">
-        <picture>
-          <source type="image/avif" srcset="assets/images/developments/the-standard-residences-brickell.avif">
-          <source type="image/webp" srcset="assets/images/developments/the-standard-residences-brickell.webp">
-          <img src="assets/images/developments/the-standard-residences-brickell.webp" alt="The Standard Residences, Brickell" width="1672" height="941" loading="lazy" decoding="async">
-        </picture>
-        <span class="tile-cap"><span class="tname">The Standard</span><span class="tdesc">Pre-construction &middot; Brickell</span></span>
-      </a>
-      <a class="tile" href="#contact">
-        <picture>
-          <source type="image/avif" srcset="assets/images/developments/domus-brickell-park.avif">
-          <source type="image/webp" srcset="assets/images/developments/domus-brickell-park.webp">
-          <img src="assets/images/developments/domus-brickell-park.webp" alt="Domus Brickell Park" width="1672" height="941" loading="lazy" decoding="async">
-        </picture>
-        <span class="tile-cap"><span class="tname">Domus Brickell Park</span><span class="tdesc">Pre-construction &middot; Brickell</span></span>
-      </a>
-      <a class="tile" href="#contact">
-        <picture>
-          <source type="image/avif" srcset="assets/images/developments/nomad-residences-wynwood.avif">
-          <source type="image/webp" srcset="assets/images/developments/nomad-residences-wynwood.webp">
-          <img src="assets/images/developments/nomad-residences-wynwood.webp" alt="Nomad Residences, Wynwood" width="1672" height="941" loading="lazy" decoding="async">
-        </picture>
-        <span class="tile-cap"><span class="tname">Nomad Residences</span><span class="tdesc">Pre-construction &middot; Wynwood</span></span>
-      </a>
-      <a class="tile" href="#contact">
-        <picture>
-          <source type="image/avif" srcset="assets/images/developments/viceroy-brickell-residences.avif">
-          <source type="image/webp" srcset="assets/images/developments/viceroy-brickell-residences.webp">
-          <img src="assets/images/developments/viceroy-brickell-residences.webp" alt="Viceroy Brickell Residences" width="1672" height="941" loading="lazy" decoding="async">
-        </picture>
-        <span class="tile-cap"><span class="tname">Viceroy</span><span class="tdesc">Pre-construction &middot; Brickell</span></span>
-      </a>
+    <div class="dev-pill reveal">
+      <span class="dev-pill-l"><span class="star">&#9733;</span> Priority Miami New-Development Opportunities</span>
+      <span class="dev-pill-r">Ask about current incentives</span>
+    </div>
+    <div class="feat-grid reveal">
+      <article class="feat-card">
+        <span class="feat-badge">Featured Pick</span>
+        <a class="feat-media" href="developments/parkside-brickell/" aria-label="Parkside details">
+          <picture>
+            <source type="image/avif" srcset="assets/images/developments/parkside-brickell.avif">
+            <source type="image/webp" srcset="assets/images/developments/parkside-brickell.webp">
+            <img src="assets/images/developments/parkside-brickell.webp" alt="Parkside, Brickell" width="1672" height="941" loading="lazy" decoding="async">
+          </picture>
+        </a>
+        <div class="feat-body">
+          <a href="developments/parkside-brickell/"><span class="feat-name">Parkside</span></a>
+          <span class="feat-sub">Pre-construction &middot; Brickell</span>
+          <a class="btn feat-btn" href="developments/parkside-brickell/">Request Pricing &amp; Availability</a>
+        </div>
+      </article>
+      <article class="feat-card">
+        <span class="feat-badge">Hot Brickell Launch</span>
+        <a class="feat-media" href="developments/the-standard-residences-brickell/" aria-label="The Standard Brickell details">
+          <picture>
+            <source type="image/avif" srcset="assets/images/developments/the-standard-residences-brickell.avif">
+            <source type="image/webp" srcset="assets/images/developments/the-standard-residences-brickell.webp">
+            <img src="assets/images/developments/the-standard-residences-brickell.webp" alt="The Standard Brickell, Brickell" width="1672" height="941" loading="lazy" decoding="async">
+          </picture>
+        </a>
+        <div class="feat-body">
+          <a href="developments/the-standard-residences-brickell/"><span class="feat-name">The Standard Brickell</span></a>
+          <span class="feat-sub">Under construction &middot; Brickell</span>
+          <a class="btn feat-btn" href="developments/the-standard-residences-brickell/">Request Pricing &amp; Availability</a>
+        </div>
+      </article>
+      <article class="feat-card">
+        <span class="feat-badge">Wynwood Standout</span>
+        <a class="feat-media" href="developments/nomad-residences-wynwood/" aria-label="Nomad Residences details">
+          <picture>
+            <source type="image/avif" srcset="assets/images/developments/nomad-residences-wynwood.avif">
+            <source type="image/webp" srcset="assets/images/developments/nomad-residences-wynwood.webp">
+            <img src="assets/images/developments/nomad-residences-wynwood.webp" alt="Nomad Residences, Wynwood" width="1672" height="941" loading="lazy" decoding="async">
+          </picture>
+        </a>
+        <div class="feat-body">
+          <a href="developments/nomad-residences-wynwood/"><span class="feat-name">Nomad Residences</span></a>
+          <span class="feat-sub">Now selling &middot; Wynwood</span>
+          <a class="btn feat-btn" href="developments/nomad-residences-wynwood/">Request Pricing &amp; Availability</a>
+        </div>
+      </article>
+      <article class="feat-card">
+        <span class="feat-badge">Luxury Spotlight</span>
+        <a class="feat-media" href="developments/viceroy-brickell-residences/" aria-label="Viceroy details">
+          <picture>
+            <source type="image/avif" srcset="assets/images/developments/viceroy-brickell-residences.avif">
+            <source type="image/webp" srcset="assets/images/developments/viceroy-brickell-residences.webp">
+            <img src="assets/images/developments/viceroy-brickell-residences.webp" alt="Viceroy, Brickell" width="1672" height="941" loading="lazy" decoding="async">
+          </picture>
+        </a>
+        <div class="feat-body">
+          <a href="developments/viceroy-brickell-residences/"><span class="feat-name">Viceroy</span></a>
+          <span class="feat-sub">Under construction &middot; Brickell</span>
+          <a class="btn feat-btn" href="developments/viceroy-brickell-residences/">Request Pricing &amp; Availability</a>
+        </div>
+      </article>
+    </div>
+    <div class="more-head"><span>More New Developments</span></div>
+    <div class="more-grid reveal">
+      <a class="more-card" href="developments/elle-residences-miami/"><span class="more-name">Elle Residences</span><span class="more-sub">Pre-construction &middot; Edgewater</span></a>
+      <a class="more-card" href="developments/domus-brickell-park/"><span class="more-name">Domus Brickell Park</span><span class="more-sub">Now selling &middot; Brickell</span></a>
     </div>
   </div>
 </section>
@@ -304,7 +356,7 @@
     <h2 class="sec-title">Where I represent buyers &amp; sellers.</h2>
   </div>
   <div class="tiles reveal">
-    <a class="tile" href="#contact">
+    <a class="tile" href="areas/brickell/">
       <picture>
         <source type="image/avif" srcset="assets/images/areas/brickell.avif">
         <source type="image/webp" srcset="assets/images/areas/brickell.webp">
@@ -312,7 +364,7 @@
       </picture>
       <span class="tile-cap"><span class="tname">Brickell</span><span class="tdesc">Financial district &amp; skyline living</span></span>
     </a>
-    <a class="tile" href="#contact">
+    <a class="tile" href="areas/edgewater/">
       <picture>
         <source type="image/avif" srcset="assets/images/areas/edgewater.avif">
         <source type="image/webp" srcset="assets/images/areas/edgewater.webp">
@@ -320,7 +372,7 @@
       </picture>
       <span class="tile-cap"><span class="tname">Edgewater</span><span class="tdesc">Waterfront towers on Biscayne Bay</span></span>
     </a>
-    <a class="tile" href="#contact">
+    <a class="tile" href="areas/downtown-miami/">
       <picture>
         <source type="image/avif" srcset="assets/images/areas/downtown-miami.avif">
         <source type="image/webp" srcset="assets/images/areas/downtown-miami.webp">
@@ -328,7 +380,7 @@
       </picture>
       <span class="tile-cap"><span class="tname">Downtown Miami</span><span class="tdesc">Urban core, culture &amp; waterfront</span></span>
     </a>
-    <a class="tile" href="#contact">
+    <a class="tile" href="areas/coral-gables/">
       <picture>
         <source type="image/avif" srcset="assets/images/areas/coral-gables.avif">
         <source type="image/webp" srcset="assets/images/areas/coral-gables.webp">
@@ -336,7 +388,7 @@
       </picture>
       <span class="tile-cap"><span class="tname">Coral Gables</span><span class="tdesc">Mediterranean elegance &amp; tree-lined luxury</span></span>
     </a>
-    <a class="tile" href="#contact">
+    <a class="tile" href="areas/miami-beach/">
       <picture>
         <source type="image/avif" srcset="assets/images/areas/miami-beach.avif">
         <source type="image/webp" srcset="assets/images/areas/miami-beach.webp">
@@ -344,7 +396,7 @@
       </picture>
       <span class="tile-cap"><span class="tname">Miami Beach</span><span class="tdesc">Oceanfront living &amp; island glamour</span></span>
     </a>
-    <a class="tile" href="#contact">
+    <a class="tile" href="areas/wynwood/">
       <picture>
         <source type="image/avif" srcset="assets/images/areas/wynwood.avif">
         <source type="image/webp" srcset="assets/images/areas/wynwood.webp">
@@ -436,6 +488,10 @@
       <div>
         <span class="brand">PERLA LUTCHMAN</span>
         <p style="margin-top:.9rem;max-width:34ch">Luxury residential &amp; pre-construction real estate in Miami. Invest where the world is investing.</p>
+      </div>
+      <div>
+        <span class="foot-h">Miami Areas</span>
+        <ul class="foot-links"><li><a href="areas/brickell/">Brickell</a></li><li><a href="areas/edgewater/">Edgewater</a></li><li><a href="areas/downtown-miami/">Downtown Miami</a></li><li><a href="areas/coral-gables/">Coral Gables</a></li><li><a href="areas/miami-beach/">Miami Beach</a></li><li><a href="areas/wynwood/">Wynwood</a></li></ul>
       </div>
       <div>
         <span class="foot-h">Explore</span>

@@ -3,13 +3,30 @@
 > Miami-based brand strategist and luxury real estate advisor. Two focused offerings under one name: brand strategy & consulting, and luxury residential + pre-construction real estate in Miami.
 
 ## About
-Perla Lutchman brings 12+ years of entrepreneurial and business experience and an MBA to every client relationship. Originally from Venezuela and raised in Trinidad & Tobago, she works from Miami.
+Perla Lutchman brings 12+ years of entrepreneurial and business experience and an MBA to every client relationship. Originally from Venezuela and raised in Trinidad & Tobago, she works from Miami. Affiliated with Avanti Way Realty LLC.
 
 ## Sites
 - [Brand Strategy](branding.html): Brand development, positioning, business strategy, and customer experience for entrepreneurs, professionals, and growing businesses. Journey stages: Vision, Launch, Momentum, Growth, Legacy.
-- [Luxury Real Estate](real-estate.html): Luxury residential and pre-construction real estate across Brickell, Edgewater, Downtown Miami, Doral, Biscayne Park, and Wynwood. Affiliated with Avanti Way Realty LLC.
+- [Luxury Real Estate](real-estate.html): Luxury residential and pre-construction real estate across Miami, with early access to pre-construction developments. Affiliated with Avanti Way Realty LLC.
+
+## Miami Areas (neighborhood real estate guides)
+- [Brickell](areas/brickell/): Miami's financial district; walkable luxury condos with strong rental yields.
+- [Edgewater](areas/edgewater/): Waterfront towers on Biscayne Bay; one of Miami's fastest-rising luxury neighborhoods.
+- [Downtown Miami](areas/downtown-miami/): The connected urban core; culture, transit, and accessible luxury pricing.
+- [Coral Gables](areas/coral-gables/): Historic Mediterranean estates, top schools, tree-lined luxury.
+- [Miami Beach](areas/miami-beach/): Oceanfront condos and trophy homes from South of Fifth to Bal Harbour.
+- [Wynwood](areas/wynwood/): Arts district turned residential hub; new short-term-rental-friendly development.
+
+## New Developments (pre-construction & new-development guides)
+- [Parkside Residences](developments/parkside-brickell/): Pre-construction condo-hotel in West Brickell; short-term-rental friendly.
+- [The Standard Residences Brickell](developments/the-standard-residences-brickell/): Branded riverfront tower with deep lifestyle amenities; delivery 2027.
+- [NoMad Residences Wynwood](developments/nomad-residences-wynwood/): Completed, hospitality-branded, short-term-rental-friendly residences in Wynwood.
+- [Viceroy Brickell Residences](developments/viceroy-brickell-residences/): Viceroy-branded luxury tower in Brickell; under construction.
+- [ELLE Residences Miami](developments/elle-residences-miami/): World's first ELLE-branded residences in Edgewater; pre-construction.
+- [Domus Brickell Park](developments/domus-brickell-park/): Completed, turnkey West Brickell condo-hotel with a built-in short-term-rental program.
 
 ## Contact
-- Phone/WhatsApp: (786) 724-5779
+- Phone/WhatsApp: (561) 538-0802
 - Instagram: @perla.lutchman
-- LinkedIn: /in/perla-lutchman
+- Facebook: /PerlaLutchman
+- TikTok: @perla.lutchman

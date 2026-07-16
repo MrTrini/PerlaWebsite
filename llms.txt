@@ -7,7 +7,7 @@ Perla Lutchman brings 12+ years of entrepreneurial and business experience and a
 
 ## Sites
 - [Brand Strategy](branding.html): Brand development, positioning, business strategy, and customer experience for entrepreneurs, professionals, and growing businesses. Journey stages: Vision, Launch, Momentum, Growth, Legacy.
-- [Luxury Real Estate](real-estate.html): Luxury residential and pre-construction real estate across Miami, with early access to pre-construction developments. Affiliated with Avanti Way Realty LLC.
+- [Luxury Real Estate](/): Luxury residential and pre-construction real estate across Miami, with early access to pre-construction developments. Affiliated with Avanti Way Realty LLC.
 
 ## Miami Areas (neighborhood real estate guides)
 - [Brickell](areas/brickell/): Miami's financial district; walkable luxury condos with strong rental yields.

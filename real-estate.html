@@ -99,7 +99,7 @@
   /* generic split */
   .split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
   .split .imgwrap picture{display:block;width:100%}
-  .split img{width:100%;aspect-ratio:4/5;object-fit:cover}
+  .split img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
   .split .body>*+*{margin-top:1.2rem}
   @media(max-width:860px){.split{grid-template-columns:1fr}.split .imgwrap{max-width:440px;margin:0 auto}}
 
@@ -324,7 +324,7 @@
       <picture>
         <source type="image/avif" srcset="assets/images/areas/downtown-miami.avif">
         <source type="image/webp" srcset="assets/images/areas/downtown-miami.webp">
-        <img src="assets/images/areas/downtown-miami.webp" alt="Downtown Miami" width="1472" height="2616" loading="lazy" decoding="async">
+        <img src="assets/images/areas/downtown-miami.webp" alt="Downtown Miami" width="1472" height="1104" loading="lazy" decoding="async">
       </picture>
       <span class="tile-cap"><span class="tname">Downtown Miami</span><span class="tdesc">Urban core, culture &amp; waterfront</span></span>
     </a>

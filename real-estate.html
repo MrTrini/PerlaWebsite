@@ -98,6 +98,7 @@
 
   /* generic split */
   .split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+  .split .imgwrap picture{display:block;width:100%}
   .split img{width:100%;aspect-ratio:4/5;object-fit:cover}
   .split .body>*+*{margin-top:1.2rem}
   @media(max-width:860px){.split{grid-template-columns:1fr}.split .imgwrap{max-width:440px;margin:0 auto}}

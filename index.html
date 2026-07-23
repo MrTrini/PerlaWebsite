@@ -102,6 +102,13 @@
   .split img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
   .split .body>*+*{margin-top:1.2rem}
   @media(max-width:860px){.split{grid-template-columns:1fr}.split .imgwrap{max-width:440px;margin:0 auto}}
+  /* centered "Why Invest" intro */
+  .invest{max-width:860px;margin:0 auto;text-align:center}
+  .invest .imgwrap{max-width:640px;margin:0 auto 2.2rem}
+  .invest .imgwrap picture{display:block;width:100%}
+  .invest img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
+  .invest .bar-label{margin-bottom:.5rem}
+  .invest .body>*+*{margin-top:1.1rem}
 
   .sec-head{max-width:46rem;margin-bottom:2.5rem}
   .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
@@ -224,8 +231,8 @@
     <a href="#home" class="brand" aria-label="Perla Lutchman, home">PERLA LUTCHMAN</a>
     <div class="nav-links" id="navLinks">
       <a href="#real-estate">Real Estate</a>
-      <a href="#areas">Miami Areas</a>
       <a href="#developments">New Developments</a>
+      <a href="#areas">Miami Areas</a>
       <a href="#about">About</a>
       <a href="#news">What's New</a>
       <a href="#contact" class="nav-cta">Contact</a>
@@ -251,6 +258,25 @@
     <div class="cta">
       <a href="#contact" class="btn">Schedule a Consultation</a>
       <a href="#developments" class="btn btn-ghost">View Developments</a>
+    </div>
+  </div>
+</section>
+
+<section id="real-estate" class="bg2">
+  <div class="wrap invest">
+    <div class="imgwrap reveal">
+      <picture>
+        <source type="image/avif" srcset="assets/images/perlas-key.avif">
+        <source type="image/webp" srcset="assets/images/perlas-key.webp">
+        <img src="assets/images/perlas-key.webp" alt="Perla Lutchman holding a key by the Miami waterfront" width="1536" height="1024" loading="lazy" decoding="async">
+      </picture>
+    </div>
+    <div class="body reveal">
+      <span class="bar-label">Why Invest in Miami</span>
+      <h2 class="sec-title">A market built for those who think beyond today.</h2>
+      <p class="muted">With international demand, a favorable tax environment, world-class developments, and exceptional long-term potential, Miami is a market built for those who think beyond today.</p>
+      <p class="muted">Whether you're searching for a home, a vacation residence, or your next strategic investment, you'll find curated opportunities, market insights, and trusted guidance to help you invest with confidence.</p>
+      <p>I'm Perla Lutchman, and I'm here to help you navigate the journey with confidence, turning opportunities into smart investments and helping you build a future in one of the world's most exciting real estate markets.</p>
     </div>
   </div>
 </section>
@@ -338,25 +364,6 @@
         <span class="more-thumb"><picture><source type="image/avif" srcset="assets/images/developments/domus-brickell-park.avif"><source type="image/webp" srcset="assets/images/developments/domus-brickell-park.webp"><img src="assets/images/developments/domus-brickell-park.webp" alt="Domus Brickell Park, Brickell" width="1672" height="941" loading="lazy" decoding="async"></picture></span>
         <span class="more-info"><span class="more-name">Domus Brickell Park</span><span class="more-sub">Now selling &middot; Brickell</span><span class="more-link">View development &rarr;</span></span>
       </a>
-    </div>
-  </div>
-</section>
-
-<section id="real-estate" class="bg2">
-  <div class="wrap split">
-    <div class="imgwrap reveal">
-      <picture>
-        <source type="image/avif" srcset="assets/images/perlas-key.avif">
-        <source type="image/webp" srcset="assets/images/perlas-key.webp">
-        <img src="assets/images/perlas-key.webp" alt="Perla Lutchman holding a key by the Miami waterfront" width="1536" height="1024" loading="lazy" decoding="async">
-      </picture>
-    </div>
-    <div class="body reveal">
-      <span class="bar-label">Why Invest in Miami</span>
-      <h2 class="sec-title">A market built for those who think beyond today.</h2>
-      <p class="muted">With international demand, a favorable tax environment, world-class developments, and exceptional long-term potential, Miami is a market built for those who think beyond today.</p>
-      <p class="muted">Whether you're searching for a home, a vacation residence, or your next strategic investment, you'll find curated opportunities, market insights, and trusted guidance to help you invest with confidence.</p>
-      <p>I'm Perla Lutchman, and I'm here to help you navigate the journey with confidence, turning opportunities into smart investments and helping you build a future in one of the world's most exciting real estate markets.</p>
     </div>
   </div>
 </section>

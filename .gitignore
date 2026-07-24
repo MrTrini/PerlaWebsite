@@ -4,3 +4,18 @@ _v*.html
 *.zip
 *.docx
 ChatGPT Image*.png
+desktop.ini
+# raw image galleries / staging uploads (curated versions live in assets/images/developments)
+619 NOBU/
+BOTANIC IMAGES/
+BRANDING IMAGES/
+DOMUS Images/
+FRIDA KAHLO/
+IMAGES ELLE/
+IMAGES PARKSIDE/
+NOMAD/
+PALM TREE/
+REAL ESTATE WS IMAGES/
+ST REGIS IMAGES/
+THE STANDARD RESIDENCES/
+VICEROY/

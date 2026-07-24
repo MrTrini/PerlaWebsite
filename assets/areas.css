@@ -94,7 +94,8 @@ footer{background:var(--bar);color:#cfc8b4;padding:3rem 0 2rem}
 @media(max-width:460px){.foot-grid{grid-template-columns:1fr}}
 .skip-link{position:absolute;left:-999px;top:0;z-index:100;background:var(--bar);color:var(--title);padding:.7rem 1.1rem}
 .skip-link:focus{left:.5rem;top:.5rem}
-a:focus-visible,button:focus-visible,summary:focus-visible{
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--bar);outline-offset:2px}
+
 /* ---- Photo gallery + lightbox ---- */
 .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem;margin-top:1.6rem}
 @media(max-width:820px){.gallery{grid-template-columns:repeat(3,1fr)}}

@@ -67,7 +67,11 @@
   .re-hero{position:relative;overflow:hidden;background:var(--bar)}
   .re-hero .media{position:absolute;inset:0;z-index:0}
   .re-hero .media picture{display:block;width:100%;height:100%}
-  .re-hero .media img{width:100%;height:100%;object-fit:cover;object-position:center}
+  /* She sits at ~10-24% of the image width. With object-fit:cover, any viewport
+     narrower than the image's 2.33:1 crops horizontally around this point, so a
+     centred (50%) origin cut her off on laptops. 25% keeps her fully in frame.
+     On viewports wider than 2.33:1 there is no horizontal crop and this is a no-op. */
+  .re-hero .media img{width:100%;height:100%;object-fit:cover;object-position:25% center}
   .re-hero .scrim{position:absolute;inset:0;z-index:1;background:
     linear-gradient(180deg,rgba(44,38,38,.5) 0%,rgba(44,38,38,.08) 20%,rgba(44,38,38,0) 44%,rgba(44,38,38,.4) 70%,rgba(44,38,38,.88) 100%)}
   .re-hero .inner{position:relative;z-index:2;min-height:clamp(440px,64vh,720px);display:flex;flex-direction:column;

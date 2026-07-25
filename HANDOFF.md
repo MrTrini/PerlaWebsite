@@ -192,9 +192,9 @@ Now that the repo is private, a token is required to clone as well as to push.
 
 ## Repo State (auto-generated)
 
-- Generated: `2026-07-25 13:40 UTC`
-- `main` HEAD: `6838164` (2026-07-24) Hide 'What's New / Happening in Miami' homepage section + nav link (placeholder; pending direction)
-- Total commits: 24
+- Generated: `2026-07-25 16:17 UTC`
+- `main` HEAD: `eb48347` (2026-07-25) Add workflow to auto-update HANDOFF.md on changes
+- Total commits: 26
 - Area pages: **6** | Development pages: **12** | Galleries: **6** (111 photos)
 - Analytics: G-3PX7D1X143 on 21/21 pages
 
@@ -252,6 +252,8 @@ Now that the repo is private, a token is required to clone as well as to push.
 ### Recent commits
 
 ```
+eb48347 2026-07-25 Add workflow to auto-update HANDOFF.md on changes
+1316432 2026-07-25 Add GA4 (G-3PX7D1X143) to all pages + self-updating HANDOFF.md tooling
 6838164 2026-07-24 Hide 'What's New / Happening in Miami' homepage section + nav link (placeholder; pending direction)
 46b78b5 2026-07-24 Add 5 new development pages (St. Regis, 619 Brickell/Nobu, Palm Tree, Botanic, Frida Kahlo); repoint homepage tiles, extend ItemList schema, update sitemap
 0ad1e3c 2026-07-24 SEO: 301-redirect legacy landing.html -> / (retire old combined page); keep sitemap real-estate-focused (remove branding.html for now)
@@ -262,8 +264,6 @@ fef8d2f 2026-07-24 The Standard Brickell: correct address to 690 SW 1st Ave
 3209f55 2026-07-23 Sync sub-page nav order + homepage FAQ/ItemList schema (SEO/AEO)
 370d1e1 2026-07-23 Developments facts, 12-property list, About portrait, branding phone
 d014c96 2026-07-23 Homepage: reorder sections + center Why-Invest image
-776d60a 2026-07-16 Make real estate the homepage; canonicals -> perlalutchman.com
-ba0dff0 2026-07-16 Developments: add thumbnails + View link to 'More New Developments' cards
 ```
 
 <!-- AUTOGEN:END -->

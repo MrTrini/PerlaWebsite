@@ -196,9 +196,9 @@ Now that the repo is private, a token is required to clone as well as to push.
 
 ## Repo State (auto-generated)
 
-- Generated: `2026-07-25 16:26 UTC`
-- `main` HEAD: `cc971ef` (2026-07-25) docs: auto-update HANDOFF.md [skip netlify]
-- Total commits: 29
+- Generated: `2026-07-25 16:27 UTC`
+- `main` HEAD: `90beb8e` (2026-07-25) Replace mailto contact form with Netlify Forms across all 19 pages
+- Total commits: 30
 - Area pages: **6** | Development pages: **12** | Galleries: **6** (111 photos)
 - Analytics: G-3PX7D1X143 on 22/22 pages
 
@@ -256,6 +256,7 @@ Now that the repo is private, a token is required to clone as well as to push.
 ### Recent commits
 
 ```
+90beb8e 2026-07-25 Replace mailto contact form with Netlify Forms across all 19 pages
 cc971ef 2026-07-25 docs: auto-update HANDOFF.md [skip netlify]
 03a829c 2026-07-25 Update GitHub Actions to use latest versions
 eabe339 2026-07-25 docs: auto-update HANDOFF.md [skip netlify]
@@ -267,7 +268,6 @@ eb48347 2026-07-25 Add workflow to auto-update HANDOFF.md on changes
 ee35521 2026-07-24 Add mobile hamburger nav to all 13 area/dev sub-pages; homepage og:image absolute (perlas-key); add branding.html to sitemap
 84ac1fb 2026-07-24 Fix areas.css: restore truncated focus-visible rule (was breaking gallery CSS)
 1799bb8 2026-07-24 Add photo galleries (lightbox) to Parkside/Nomad/Viceroy/Elle/Domus; add The Standard Residences Midtown page + gallery; wire homepage, sitemap, llms
-fef8d2f 2026-07-24 The Standard Brickell: correct address to 690 SW 1st Ave
 ```
 
 <!-- AUTOGEN:END -->

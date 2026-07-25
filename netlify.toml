@@ -9,3 +9,20 @@
   to = "/"
   status = 301
   force = true
+
+# Internal docs and tooling live in the repo but must not be served on the live
+# domain. Making the GitHub repo private protects github.com; it does NOT stop
+# Netlify publishing these files, because Netlify deploys the repo root either way.
+# force = true is required: these files exist on disk, so without it Netlify
+# would serve them instead of applying the rule.
+[[redirects]]
+  from = "/HANDOFF.md"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/tools/*"
+  to = "/404.html"
+  status = 404
+  force = true

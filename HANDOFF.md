@@ -196,16 +196,16 @@ Now that the repo is private, a token is required to clone as well as to push.
 
 ## Repo State (auto-generated)
 
-- Generated: `2026-07-25 16:27 UTC`
-- `main` HEAD: `90beb8e` (2026-07-25) Replace mailto contact form with Netlify Forms across all 19 pages
-- Total commits: 30
+- Generated: `2026-07-25 16:30 UTC`
+- `main` HEAD: `cd524f7` (2026-07-25) Hero: shift crop origin left so Perla is not cut off on laptop screens
+- Total commits: 32
 - Area pages: **6** | Development pages: **12** | Galleries: **6** (111 photos)
 - Analytics: G-3PX7D1X143 on 22/22 pages
 
 ### Root files
 
 - `branding.html` (383 lines) Perla Lutchman | Brand Strategy &amp; Consulting
-- `index.html` (584 lines) Perla Lutchman | Luxury Real Estate, Miami
+- `index.html` (588 lines) Perla Lutchman | Luxury Real Estate, Miami
 - `landing.html` (91 lines) Perla Lutchman | Brand Strategy &amp; Luxury Real Estate — Miami
 
 ### Netlify redirects
@@ -256,6 +256,8 @@ Now that the repo is private, a token is required to clone as well as to push.
 ### Recent commits
 
 ```
+cd524f7 2026-07-25 Hero: shift crop origin left so Perla is not cut off on laptop screens
+247567b 2026-07-25 docs: auto-update HANDOFF.md [skip netlify]
 90beb8e 2026-07-25 Replace mailto contact form with Netlify Forms across all 19 pages
 cc971ef 2026-07-25 docs: auto-update HANDOFF.md [skip netlify]
 03a829c 2026-07-25 Update GitHub Actions to use latest versions
@@ -266,8 +268,6 @@ eb48347 2026-07-25 Add workflow to auto-update HANDOFF.md on changes
 46b78b5 2026-07-24 Add 5 new development pages (St. Regis, 619 Brickell/Nobu, Palm Tree, Botanic, Frida Kahlo); repoint homepage tiles, extend ItemList schema, update sitemap
 0ad1e3c 2026-07-24 SEO: 301-redirect legacy landing.html -> / (retire old combined page); keep sitemap real-estate-focused (remove branding.html for now)
 ee35521 2026-07-24 Add mobile hamburger nav to all 13 area/dev sub-pages; homepage og:image absolute (perlas-key); add branding.html to sitemap
-84ac1fb 2026-07-24 Fix areas.css: restore truncated focus-visible rule (was breaking gallery CSS)
-1799bb8 2026-07-24 Add photo galleries (lightbox) to Parkside/Nomad/Viceroy/Elle/Domus; add The Standard Residences Midtown page + gallery; wire homepage, sitemap, llms
 ```
 
 <!-- AUTOGEN:END -->

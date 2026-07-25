@@ -1,0 +1,58 @@
+name: Update handoff
+
+# Regenerates the auto-derived block in HANDOFF.md whenever the site changes,
+# and commits it back to main. Also runnable by hand from the Actions tab.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**/*.html'
+      - 'sitemap.xml'
+      - 'llms.txt'
+      - 'robots.txt'
+      - 'netlify.toml'
+      - 'README.md'
+      - 'assets/**'
+      - 'developments/**'
+      - 'areas/**'
+      - 'tools/gen-handoff.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: handoff-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # generator reads git log and commit count
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Regenerate HANDOFF.md
+        run: python tools/gen-handoff.py
+
+      - name: Commit if changed
+        run: |
+          if [ -z "$(git status --porcelain HANDOFF.md)" ]; then
+            echo "No handoff changes."
+            exit 0
+          fi
+          git config user.name  "handoff-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add HANDOFF.md
+          # [skip netlify] prevents a redundant second deploy for a docs-only commit
+          git commit -m "docs: auto-update HANDOFF.md [skip netlify]"
+          # main may have moved while this job ran; rebase so the push cannot
+          # fail non-fast-forward.
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

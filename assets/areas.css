@@ -119,3 +119,19 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 .lb-prev{left:.4rem}.lb-next{right:.4rem}
 .lb-count{position:absolute;bottom:1.1rem;left:0;right:0;text-align:center;color:#EDE6DC;font-size:.78rem;letter-spacing:.14em}
 @media(max-width:520px){.lb-prev,.lb-next{font-size:2.2rem}}
+
+/* INQUIRY FORM (inside .cta-band) */
+.inq{max-width:44rem;margin:2rem auto 0;text-align:left}
+.inq-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+.inq input,.inq textarea{width:100%;background:rgba(255,255,255,.06);
+  border:1px solid rgba(237,230,220,.3);padding:.9rem 1.1rem;font-family:var(--body);
+  font-size:.9rem;color:#EDE6DC}
+.inq input::placeholder,.inq textarea::placeholder{color:#B3AAA0}
+.inq textarea{resize:vertical;margin-bottom:1.2rem}
+.inq input:focus,.inq textarea:focus{outline:none;border-color:var(--title)}
+.inq .btn{margin-top:0;width:100%;justify-content:center}
+.inq-note{margin-top:1rem;font-size:.8rem;color:#B3AAA0;text-align:center}
+.hp{position:absolute!important;left:-9999px;top:-9999px}
+.visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+@media(max-width:860px){.inq-row{grid-template-columns:1fr}}

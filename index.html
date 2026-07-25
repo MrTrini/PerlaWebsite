@@ -191,6 +191,7 @@
 
   .skip-link{position:absolute;left:-999px;top:0;z-index:100;background:var(--bar);color:var(--title);padding:.7rem 1.1rem;font-family:var(--title-f);letter-spacing:.1em;text-transform:uppercase;font-size:12px}
   .skip-link:focus{left:.5rem;top:.5rem}
+  .hp{position:absolute!important;left:-9999px;top:-9999px}
   .visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
   a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--bar);outline-offset:2px;border-radius:2px}
   .nav-links a:focus-visible,.nav-toggle:focus-visible,.brand:focus-visible,.skip-link:focus-visible{outline-color:var(--title)}
@@ -519,7 +520,12 @@
         <a href="https://linktr.ee/perla.lutchman" target="_blank" rel="noopener"><span class="d" aria-hidden="true">&#128279;</span> Linktree</a>
       </div>
     </div>
-    <form class="reveal" id="contactForm" aria-label="Contact Perla Lutchman about real estate">
+    <form class="reveal" id="contactForm" name="contact" method="POST" action="/thanks/"
+          data-netlify="true" netlify-honeypot="bot-field"
+          aria-label="Contact Perla Lutchman about real estate">
+      <input type="hidden" name="form-name" value="contact">
+      <input type="hidden" name="page-source" value="Homepage">
+      <p class="hp" aria-hidden="true"><label>Leave this field empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
       <div class="frow">
         <label class="visually-hidden" for="f-first">First name</label>
         <input id="f-first" type="text" name="first" placeholder="First Name *" required autocomplete="given-name">
@@ -573,8 +579,6 @@
   document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
   var t=document.getElementById('navToggle'),l=document.getElementById('navLinks');
   if(t){t.addEventListener('click',function(){var open=l.classList.toggle('open');t.setAttribute('aria-expanded',open?'true':'false');t.setAttribute('aria-label',open?'Close menu':'Open menu')});l.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){l.classList.remove('open');t.setAttribute('aria-expanded','false');t.setAttribute('aria-label','Open menu')})})}
-  var f=document.getElementById('contactForm');
-  if(f){f.addEventListener('submit',function(e){e.preventDefault();var d=new FormData(f);var body='Name: '+(d.get('first')||'')+' '+(d.get('last')||'')+'%0D%0AEmail: '+(d.get('email')||'')+'%0D%0APhone: '+(d.get('phone')||'')+'%0D%0A%0D%0A'+(d.get('message')||'');window.location.href='mailto:concierge.perlalutchman@gmail.com?subject=Real%20Estate%20Inquiry%20from%20'+encodeURIComponent(d.get('first')||'')+'&body='+body;})}
 </script>
 </body>
 </html>

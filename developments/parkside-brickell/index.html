@@ -95,7 +95,27 @@
   <span class="bar-label" style="background:var(--title);color:var(--bar)">Early access</span>
   <h2 class="sec-title">Interested in Parkside Residences?</h2>
   <p>Ask about current pricing, availability, floor plans, and incentives.</p>
-  <a class="btn" href="../../#contact">Request Pricing &amp; Availability</a>
+  <form class="inq" name="contact" method="POST" action="/thanks/" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="contact">
+    <input type="hidden" name="page-source" value="Parkside Residences (development)">
+    <p class="hp" aria-hidden="true"><label>Leave this field empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+    <div class="inq-row">
+      <label class="visually-hidden" for="q-first">First name</label>
+      <input id="q-first" type="text" name="first" placeholder="First Name *" required autocomplete="given-name">
+      <label class="visually-hidden" for="q-last">Last name</label>
+      <input id="q-last" type="text" name="last" placeholder="Last Name *" required autocomplete="family-name">
+    </div>
+    <div class="inq-row">
+      <label class="visually-hidden" for="q-email">Email</label>
+      <input id="q-email" type="email" name="email" placeholder="Email *" required autocomplete="email">
+      <label class="visually-hidden" for="q-phone">Phone</label>
+      <input id="q-phone" type="tel" name="phone" placeholder="Phone" autocomplete="tel">
+    </div>
+    <label class="visually-hidden" for="q-msg">How can I help?</label>
+    <textarea id="q-msg" rows="3" name="message" placeholder="Tell me a little about what you're looking for."></textarea>
+    <button type="submit" class="btn">Request Pricing &amp; Availability</button>
+    <p class="inq-note">Or reach me directly on WhatsApp at <a href="https://wa.me/15615380802" style="text-decoration:underline">(561) 538-0802</a>.</p>
+  </form>
 </div></section>
 
 <section><div class="wrap">

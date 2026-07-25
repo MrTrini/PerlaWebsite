@@ -67,8 +67,8 @@ inconsistent picture of the site:
 4. `sitemap.xml`
 5. `llms.txt`
 
-New pages also need the GA4 snippet (see section 6). The auto-generated consistency checks
-below will catch you if you miss any of it.
+New pages also need the GA4 snippet (section 6) and, if they are a landing page, an inquiry
+form (section 7). The auto-generated consistency checks below will catch missing GA4 tags.
 
 Every development page must carry the legal disclaimer:
 
@@ -93,17 +93,21 @@ Every development page must carry the legal disclaimer:
   `<head>`, immediately after the `viewport` meta (it must come after `charset`, never before).
 - **Any new page must get the snippet** or it will silently report nothing. The consistency
   checks below flag pages that are missing it and flag more than one GA4 ID being in use.
-- **GA4 currently records no leads**, because the contact form never submits anywhere (see
-  section 7). Pageviews and traffic sources are real; conversions do not exist yet.
+- **Conversion tracking:** `/thanks/` fires `gtag('event','generate_lead', {form_id:'contact'})`.
+  That page is only reachable after a successful Netlify form POST, so it is a trustworthy
+  signal. **Mark `generate_lead` as a Key Event in GA4** (Admin > Events) or it will not count
+  as a conversion in reports.
 - Still to do: submit the sitemap in Google Search Console, and set up a Google Business
   Profile for local SEO.
 
 ## 7. Known weak points
 
-- **Contact form is `mailto:` only.** It builds a mail link and hands off to the OS mail
-  client. Fails silently for desktop webmail users, who see nothing happen at all. Zero lead
-  capture, zero conversion tracking. Highest-value fix available, and it is what stops GA4
-  being useful. Netlify Forms is the shortest path since Netlify is already the host.
+- ~~Contact form is `mailto:` only.~~ **RESOLVED 2026-07-25.** All 19 forms now POST to
+  **Netlify Forms** (one form named `contact`, so every lead lands in a single inbox) and
+  redirect to `/thanks/`. A hidden `page-source` field records which of the 19 pages the lead
+  came from. Honeypot field `bot-field` only, no CAPTCHA. Free tier is **100 submissions per
+  month** across the whole site; going over means silently dropped leads, so watch the Netlify
+  Forms dashboard as traffic grows.
 - **No `404.html`.** Netlify serves its own generic page, which has no nav back into the site.
 - **Social previews are likely blank.** `og:image` is `.webp` on every page, there is no
   `og:url` on the homepage, and no `twitter:card` anywhere. WhatsApp is the primary contact
@@ -192,16 +196,16 @@ Now that the repo is private, a token is required to clone as well as to push.
 
 ## Repo State (auto-generated)
 
-- Generated: `2026-07-25 16:22 UTC`
-- `main` HEAD: `03a829c` (2026-07-25) Update GitHub Actions to use latest versions
-- Total commits: 28
+- Generated: `2026-07-25 16:26 UTC`
+- `main` HEAD: `cc971ef` (2026-07-25) docs: auto-update HANDOFF.md [skip netlify]
+- Total commits: 29
 - Area pages: **6** | Development pages: **12** | Galleries: **6** (111 photos)
-- Analytics: G-3PX7D1X143 on 21/21 pages
+- Analytics: G-3PX7D1X143 on 22/22 pages
 
 ### Root files
 
 - `branding.html` (383 lines) Perla Lutchman | Brand Strategy &amp; Consulting
-- `index.html` (580 lines) Perla Lutchman | Luxury Real Estate, Miami
+- `index.html` (584 lines) Perla Lutchman | Luxury Real Estate, Miami
 - `landing.html` (91 lines) Perla Lutchman | Brand Strategy &amp; Luxury Real Estate — Miami
 
 ### Netlify redirects
@@ -252,6 +256,7 @@ Now that the repo is private, a token is required to clone as well as to push.
 ### Recent commits
 
 ```
+cc971ef 2026-07-25 docs: auto-update HANDOFF.md [skip netlify]
 03a829c 2026-07-25 Update GitHub Actions to use latest versions
 eabe339 2026-07-25 docs: auto-update HANDOFF.md [skip netlify]
 eb48347 2026-07-25 Add workflow to auto-update HANDOFF.md on changes
@@ -263,7 +268,6 @@ ee35521 2026-07-24 Add mobile hamburger nav to all 13 area/dev sub-pages; homepa
 84ac1fb 2026-07-24 Fix areas.css: restore truncated focus-visible rule (was breaking gallery CSS)
 1799bb8 2026-07-24 Add photo galleries (lightbox) to Parkside/Nomad/Viceroy/Elle/Domus; add The Standard Residences Midtown page + gallery; wire homepage, sitemap, llms
 fef8d2f 2026-07-24 The Standard Brickell: correct address to 690 SW 1st Ave
-3209f55 2026-07-23 Sync sub-page nav order + homepage FAQ/ItemList schema (SEO/AEO)
 ```
 
 <!-- AUTOGEN:END -->

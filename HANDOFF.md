@@ -196,9 +196,9 @@ Now that the repo is private, a token is required to clone as well as to push.
 
 ## Repo State (auto-generated)
 
-- Generated: `2026-07-25 16:30 UTC`
-- `main` HEAD: `cd524f7` (2026-07-25) Hero: shift crop origin left so Perla is not cut off on laptop screens
-- Total commits: 32
+- Generated: `2026-07-25 16:37 UTC`
+- `main` HEAD: `d1c164d` (2026-07-25) docs: auto-update HANDOFF.md [skip netlify]
+- Total commits: 33
 - Area pages: **6** | Development pages: **12** | Galleries: **6** (111 photos)
 - Analytics: G-3PX7D1X143 on 22/22 pages
 
@@ -256,6 +256,7 @@ Now that the repo is private, a token is required to clone as well as to push.
 ### Recent commits
 
 ```
+d1c164d 2026-07-25 docs: auto-update HANDOFF.md [skip netlify]
 cd524f7 2026-07-25 Hero: shift crop origin left so Perla is not cut off on laptop screens
 247567b 2026-07-25 docs: auto-update HANDOFF.md [skip netlify]
 90beb8e 2026-07-25 Replace mailto contact form with Netlify Forms across all 19 pages
@@ -267,7 +268,6 @@ eb48347 2026-07-25 Add workflow to auto-update HANDOFF.md on changes
 6838164 2026-07-24 Hide 'What's New / Happening in Miami' homepage section + nav link (placeholder; pending direction)
 46b78b5 2026-07-24 Add 5 new development pages (St. Regis, 619 Brickell/Nobu, Palm Tree, Botanic, Frida Kahlo); repoint homepage tiles, extend ItemList schema, update sitemap
 0ad1e3c 2026-07-24 SEO: 301-redirect legacy landing.html -> / (retire old combined page); keep sitemap real-estate-focused (remove branding.html for now)
-ee35521 2026-07-24 Add mobile hamburger nav to all 13 area/dev sub-pages; homepage og:image absolute (perlas-key); add branding.html to sitemap
 ```
 
 <!-- AUTOGEN:END -->

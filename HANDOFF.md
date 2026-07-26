@@ -19,10 +19,10 @@ in it.
 
 ## Repo State (auto-generated)
 
-- Generated: `2026-07-26 03:21 UTC`
-- `main` HEAD: `606f9bc` (2026-07-25) docs: auto-update HANDOFF.md [skip netlify]
-- Total commits: 34
-- Area pages: **6** | Development pages: **12** | Galleries: **6** (111 photos)
+- Generated: `2026-07-26 03:44 UTC`
+- `main` HEAD: `ea8a67a` (2026-07-25) Strip HANDOFF.md to the generated site inventory only
+- Total commits: 35
+- Area pages: **6** | Development pages: **12** | Galleries: **12** (193 photos)
 - Analytics: G-3PX7D1X143 on 22/22 pages
 
 ### Root files
@@ -57,28 +57,28 @@ in it.
 
 | Slug | URL | Gallery | Schema |
 |---|---|---|---|
-| `619-brickell-nobu` | `/developments/619-brickell-nobu/` | **none** | ApartmentComplex, BreadcrumbList, FAQPage |
-| `botanic-residences` | `/developments/botanic-residences/` | **none** | ApartmentComplex, BreadcrumbList, FAQPage |
+| `619-brickell-nobu` | `/developments/619-brickell-nobu/` | 9 photos | ApartmentComplex, BreadcrumbList, FAQPage |
+| `botanic-residences` | `/developments/botanic-residences/` | 15 photos | ApartmentComplex, BreadcrumbList, FAQPage |
 | `domus-brickell-park` | `/developments/domus-brickell-park/` | 15 photos | ApartmentComplex, BreadcrumbList, FAQPage |
 | `elle-residences-miami` | `/developments/elle-residences-miami/` | 16 photos | ApartmentComplex, BreadcrumbList, FAQPage |
-| `frida-kahlo-wynwood` | `/developments/frida-kahlo-wynwood/` | **none** | ApartmentComplex, BreadcrumbList, FAQPage |
+| `frida-kahlo-wynwood` | `/developments/frida-kahlo-wynwood/` | 8 photos | ApartmentComplex, BreadcrumbList, FAQPage |
 | `nomad-residences-wynwood` | `/developments/nomad-residences-wynwood/` | 22 photos | ApartmentComplex, BreadcrumbList, FAQPage |
-| `palm-tree-residences` | `/developments/palm-tree-residences/` | **none** | ApartmentComplex, BreadcrumbList, FAQPage |
+| `palm-tree-residences` | `/developments/palm-tree-residences/` | 7 photos | ApartmentComplex, BreadcrumbList, FAQPage |
 | `parkside-brickell` | `/developments/parkside-brickell/` | 22 photos | ApartmentComplex, BreadcrumbList, FAQPage |
-| `st-regis-residences-brickell` | `/developments/st-regis-residences-brickell/` | **none** | ApartmentComplex, BreadcrumbList, FAQPage |
-| `the-standard-residences-brickell` | `/developments/the-standard-residences-brickell/` | **none** | ApartmentComplex, BreadcrumbList, FAQPage |
+| `st-regis-residences-brickell` | `/developments/st-regis-residences-brickell/` | 30 photos | ApartmentComplex, BreadcrumbList, FAQPage |
+| `the-standard-residences-brickell` | `/developments/the-standard-residences-brickell/` | 13 photos | ApartmentComplex, BreadcrumbList, FAQPage |
 | `the-standard-residences-midtown` | `/developments/the-standard-residences-midtown/` | 16 photos | ApartmentComplex, BreadcrumbList, FAQPage |
 | `viceroy-brickell-residences` | `/developments/viceroy-brickell-residences/` | 20 photos | ApartmentComplex, BreadcrumbList, FAQPage |
 
 ### Consistency checks
 
 - **llms.txt missing 5 page(s):** `619-brickell-nobu`, `botanic-residences`, `frida-kahlo-wynwood`, `palm-tree-residences`, `st-regis-residences-brickell`
-- **development pages without a gallery (6):** `619-brickell-nobu`, `botanic-residences`, `frida-kahlo-wynwood`, `palm-tree-residences`, `st-regis-residences-brickell`, `the-standard-residences-brickell`
 - **README.md references `real-estate.html`, which does not exist**
 
 ### Recent commits
 
 ```
+ea8a67a 2026-07-25 Strip HANDOFF.md to the generated site inventory only
 606f9bc 2026-07-25 docs: auto-update HANDOFF.md [skip netlify]
 d1c164d 2026-07-25 docs: auto-update HANDOFF.md [skip netlify]
 cd524f7 2026-07-25 Hero: shift crop origin left so Perla is not cut off on laptop screens
@@ -90,7 +90,6 @@ eabe339 2026-07-25 docs: auto-update HANDOFF.md [skip netlify]
 eb48347 2026-07-25 Add workflow to auto-update HANDOFF.md on changes
 1316432 2026-07-25 Add GA4 (G-3PX7D1X143) to all pages + self-updating HANDOFF.md tooling
 6838164 2026-07-24 Hide 'What's New / Happening in Miami' homepage section + nav link (placeholder; pending direction)
-46b78b5 2026-07-24 Add 5 new development pages (St. Regis, 619 Brickell/Nobu, Palm Tree, Botanic, Frida Kahlo); repoint homepage tiles, extend ItemList schema, update sitemap
 ```
 
 <!-- AUTOGEN:END -->

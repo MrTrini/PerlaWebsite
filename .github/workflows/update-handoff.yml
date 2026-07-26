@@ -50,8 +50,7 @@ jobs:
           git config user.name  "handoff-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add HANDOFF.md
-          # [skip netlify] prevents a redundant second deploy for a docs-only commit
-          git commit -m "docs: auto-update HANDOFF.md [skip netlify]"
+          git commit -m "docs: auto-update HANDOFF.md"
           # main may have moved while this job ran; rebase so the push cannot
           # fail non-fast-forward.
           git pull --rebase origin "${GITHUB_REF_NAME}"

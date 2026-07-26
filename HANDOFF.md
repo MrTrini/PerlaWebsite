@@ -20,8 +20,8 @@ in it.
 ## Repo State (auto-generated)
 
 - Generated: `2026-07-26 10:56 UTC`
-- `main` HEAD: `455c614` (2026-07-26) docs: auto-update HANDOFF.md
-- Total commits: 41
+- `main` HEAD: `9b0ec95` (2026-07-26) Add cache + security headers, a real 404 page, and remove stale LinkedIn links
+- Total commits: 42
 - Area pages: **6** | Development pages: **12** | Galleries: **12** (193 photos)
 - Analytics: G-3PX7D1X143 on 23/23 pages
 
@@ -78,6 +78,7 @@ in it.
 ### Recent commits
 
 ```
+9b0ec95 2026-07-26 Add cache + security headers, a real 404 page, and remove stale LinkedIn links
 455c614 2026-07-26 docs: auto-update HANDOFF.md
 f0361c3 2026-07-25 Clear the last two consistency checks: llms.txt and README
 2d4e2ad 2026-07-25 Merge pull request #1 from MrTrini/MrTrini-patch-1
@@ -89,7 +90,6 @@ a46f410 2026-07-25 Update commit message for HANDOFF.md auto-update
 d1c164d 2026-07-25 docs: auto-update HANDOFF.md [skip netlify]
 cd524f7 2026-07-25 Hero: shift crop origin left so Perla is not cut off on laptop screens
 247567b 2026-07-25 docs: auto-update HANDOFF.md [skip netlify]
-90beb8e 2026-07-25 Replace mailto contact form with Netlify Forms across all 19 pages
 ```
 
 <!-- AUTOGEN:END -->

@@ -19,18 +19,18 @@ in it.
 
 ## Repo State (auto-generated)
 
-- Generated: `2026-07-26 10:56 UTC`
-- `main` HEAD: `9b0ec95` (2026-07-26) Add cache + security headers, a real 404 page, and remove stale LinkedIn links
-- Total commits: 42
+- Generated: `2026-07-26 11:20 UTC`
+- `main` HEAD: `6dea479` (2026-07-26) docs: auto-update HANDOFF.md
+- Total commits: 43
 - Area pages: **6** | Development pages: **12** | Galleries: **12** (193 photos)
 - Analytics: G-3PX7D1X143 on 23/23 pages
 
 ### Root files
 
-- `404.html` (75 lines) Page Not Found | Perla Lutchman, Luxury Real Estate Miami
-- `branding.html` (383 lines) Perla Lutchman | Brand Strategy &amp; Consulting
-- `index.html` (588 lines) Perla Lutchman | Luxury Real Estate, Miami
-- `landing.html` (91 lines) Perla Lutchman | Brand Strategy &amp; Luxury Real Estate — Miami
+- `404.html` (86 lines) Page Not Found | Perla Lutchman, Luxury Real Estate Miami
+- `branding.html` (393 lines) Perla Lutchman | Brand Strategy &amp; Consulting
+- `index.html` (598 lines) Perla Lutchman | Luxury Real Estate, Miami
+- `landing.html` (101 lines) Perla Lutchman | Brand Strategy &amp; Luxury Real Estate — Miami
 
 ### Netlify redirects
 
@@ -78,6 +78,7 @@ in it.
 ### Recent commits
 
 ```
+6dea479 2026-07-26 docs: auto-update HANDOFF.md
 9b0ec95 2026-07-26 Add cache + security headers, a real 404 page, and remove stale LinkedIn links
 455c614 2026-07-26 docs: auto-update HANDOFF.md
 f0361c3 2026-07-25 Clear the last two consistency checks: llms.txt and README
@@ -89,7 +90,6 @@ ea8a67a 2026-07-25 Strip HANDOFF.md to the generated site inventory only
 a46f410 2026-07-25 Update commit message for HANDOFF.md auto-update
 d1c164d 2026-07-25 docs: auto-update HANDOFF.md [skip netlify]
 cd524f7 2026-07-25 Hero: shift crop origin left so Perla is not cut off on laptop screens
-247567b 2026-07-25 docs: auto-update HANDOFF.md [skip netlify]
 ```
 
 <!-- AUTOGEN:END -->

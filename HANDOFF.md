@@ -20,8 +20,8 @@ in it.
 ## Repo State (auto-generated)
 
 - Generated: `2026-07-26 11:20 UTC`
-- `main` HEAD: `6dea479` (2026-07-26) docs: auto-update HANDOFF.md
-- Total commits: 43
+- `main` HEAD: `4a68e9c` (2026-07-26) Social previews: JPG og:image cards, og:url and twitter:card on every page
+- Total commits: 44
 - Area pages: **6** | Development pages: **12** | Galleries: **12** (193 photos)
 - Analytics: G-3PX7D1X143 on 23/23 pages
 
@@ -78,6 +78,7 @@ in it.
 ### Recent commits
 
 ```
+4a68e9c 2026-07-26 Social previews: JPG og:image cards, og:url and twitter:card on every page
 6dea479 2026-07-26 docs: auto-update HANDOFF.md
 9b0ec95 2026-07-26 Add cache + security headers, a real 404 page, and remove stale LinkedIn links
 455c614 2026-07-26 docs: auto-update HANDOFF.md
@@ -89,7 +90,6 @@ ea8a67a 2026-07-25 Strip HANDOFF.md to the generated site inventory only
 606f9bc 2026-07-25 docs: auto-update HANDOFF.md [skip netlify]
 a46f410 2026-07-25 Update commit message for HANDOFF.md auto-update
 d1c164d 2026-07-25 docs: auto-update HANDOFF.md [skip netlify]
-cd524f7 2026-07-25 Hero: shift crop origin left so Perla is not cut off on laptop screens
 ```
 
 <!-- AUTOGEN:END -->

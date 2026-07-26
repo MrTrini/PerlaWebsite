@@ -19,9 +19,9 @@ in it.
 
 ## Repo State (auto-generated)
 
-- Generated: `2026-07-26 03:44 UTC`
-- `main` HEAD: `ea8a67a` (2026-07-25) Strip HANDOFF.md to the generated site inventory only
-- Total commits: 35
+- Generated: `2026-07-26 03:45 UTC`
+- `main` HEAD: `1a89889` (2026-07-25) Add photo galleries to the last 6 development pages
+- Total commits: 36
 - Area pages: **6** | Development pages: **12** | Galleries: **12** (193 photos)
 - Analytics: G-3PX7D1X143 on 22/22 pages
 
@@ -78,6 +78,7 @@ in it.
 ### Recent commits
 
 ```
+1a89889 2026-07-25 Add photo galleries to the last 6 development pages
 ea8a67a 2026-07-25 Strip HANDOFF.md to the generated site inventory only
 606f9bc 2026-07-25 docs: auto-update HANDOFF.md [skip netlify]
 d1c164d 2026-07-25 docs: auto-update HANDOFF.md [skip netlify]
@@ -89,7 +90,6 @@ cc971ef 2026-07-25 docs: auto-update HANDOFF.md [skip netlify]
 eabe339 2026-07-25 docs: auto-update HANDOFF.md [skip netlify]
 eb48347 2026-07-25 Add workflow to auto-update HANDOFF.md on changes
 1316432 2026-07-25 Add GA4 (G-3PX7D1X143) to all pages + self-updating HANDOFF.md tooling
-6838164 2026-07-24 Hide 'What's New / Happening in Miami' homepage section + nav link (placeholder; pending direction)
 ```
 
 <!-- AUTOGEN:END -->

@@ -26,3 +26,46 @@
   to = "/404.html"
   status = 404
   force = true
+
+# ---------------------------------------------------------------------------
+# Caching
+#
+# Netlify's default is "public,max-age=0,must-revalidate" on everything, so a
+# returning visitor makes one conditional round trip PER ASSET. The St. Regis
+# page has 30 gallery images, so that is 30 round trips before anything paints
+# from cache.
+#
+# Images get 30 days rather than the usual 1-year-immutable on purpose. These
+# filenames are NOT content-hashed (there is no build step), and gallery files
+# are numbered 01.webp, 02.webp... so regenerating a gallery reuses the same
+# names. 'immutable' would pin returning visitors to stale photos for a year.
+# 30 days keeps nearly all of the benefit with bounded staleness.
+#
+# CSS and JS are deliberately left on must-revalidate: areas.css is edited often
+# and there are only two files, so the 304s are cheap and changes land instantly.
+# ---------------------------------------------------------------------------
+[[headers]]
+  for = "/assets/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "/developments/*/gallery/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+# ---------------------------------------------------------------------------
+# Security headers
+#
+# No Content-Security-Policy: the homepage carries inline <style> and inline
+# <script>, and every page has inline JSON-LD, so any workable policy would need
+# 'unsafe-inline' and would buy almost nothing. Revisit if the inline CSS is
+# ever extracted to a file.
+# ---------------------------------------------------------------------------
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=(), payment=()"

@@ -81,16 +81,20 @@
   status = 301
   force = true
 
-# Netlify does NOT add noindex to branch deploys or deploy previews by default -
-# verified 2026-07-26, preview--perlalutchman.netlify.app returned no
-# X-Robots-Tag at all. Without this, every preview is a crawlable duplicate of
-# the whole site. Context-scoped so production is unaffected.
-[[context.branch-deploy.headers]]
-  for = "/*"
-  [context.branch-deploy.headers.values]
-    X-Robots-Tag = "noindex, nofollow"
+# Keep previews out of the index.
+#
+# Headers in netlify.toml are GLOBAL - they cannot be scoped to a deploy context.
+# [[context.branch-deploy.headers]] parses as valid TOML and is silently ignored,
+# which is how this was missed the first time. Context-specific *build commands*
+# are supported, so each preview context writes its own _headers file instead.
+#
+# Netlify auto-noindexes deploy previews and OLD branch deploys, but not the
+# current branch alias (preview--perlalutchman.netlify.app), which is the one
+# that stays reachable. Verified 2026-07-26: it returned no X-Robots-Tag.
+#
+# _headers merges with the [[headers]] rules above; nothing here conflicts.
+[context.branch-deploy]
+  command = "printf '/*\n  X-Robots-Tag: noindex, nofollow\n' > _headers"
 
-[[context.deploy-preview.headers]]
-  for = "/*"
-  [context.deploy-preview.headers.values]
-    X-Robots-Tag = "noindex, nofollow"
+[context.deploy-preview]
+  command = "printf '/*\n  X-Robots-Tag: noindex, nofollow\n' > _headers"

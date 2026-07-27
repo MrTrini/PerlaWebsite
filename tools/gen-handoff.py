@@ -136,7 +136,8 @@ def build():
     a("## Repo State (auto-generated)")
     a("")
     a(f"- Generated: `{datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}`")
-    a(f"- `main` HEAD: `{sh('git','rev-parse','--short','HEAD')}` "
+    branch = os.environ.get("GITHUB_REF_NAME") or sh("git","rev-parse","--abbrev-ref","HEAD") or "HEAD"
+    a(f"- `{branch}` HEAD: `{sh('git','rev-parse','--short','HEAD')}` "
       f"({sh('git','log','-1','--format=%ad','--date=short')}) "
       f"{sh('git','log','-1','--format=%s')}")
     a(f"- Total commits: {sh('git','rev-list','--count','HEAD')}")

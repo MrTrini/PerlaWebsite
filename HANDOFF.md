@@ -19,9 +19,9 @@ in it.
 
 ## Repo State (auto-generated)
 
-- Generated: `2026-07-27 02:53 UTC`
-- `main` HEAD: `74803d3` (2026-07-26) Add /search/ property search page with MIAMIRE Matrix IDX embed
-- Total commits: 48
+- Generated: `2026-07-27 11:19 UTC`
+- `preview` HEAD: `d7cb970` (2026-07-26) Fix preview noindex: use context build commands, not context headers
+- Total commits: 51
 - Area pages: **6** | Development pages: **12** | Galleries: **12** (193 photos)
 - Analytics: G-3PX7D1X143 on 24/24 pages
 
@@ -79,6 +79,9 @@ in it.
 ### Recent commits
 
 ```
+d7cb970 2026-07-26 Fix preview noindex: use context build commands, not context headers
+fad586e 2026-07-26 noindex branch deploys and deploy previews
+227e688 2026-07-26 Preview-safe analytics + stop serving the site on two domains
 74803d3 2026-07-26 Add /search/ property search page with MIAMIRE Matrix IDX embed
 2832fc2 2026-07-26 docs: auto-update HANDOFF.md
 f35dc09 2026-07-26 Rewrite page titles and meta descriptions to fit search result limits
@@ -88,9 +91,6 @@ f35dc09 2026-07-26 Rewrite page titles and meta descriptions to fit search resul
 9b0ec95 2026-07-26 Add cache + security headers, a real 404 page, and remove stale LinkedIn links
 455c614 2026-07-26 docs: auto-update HANDOFF.md
 f0361c3 2026-07-25 Clear the last two consistency checks: llms.txt and README
-2d4e2ad 2026-07-25 Merge pull request #1 from MrTrini/MrTrini-patch-1
-eecbf19 2026-07-26 docs: auto-update HANDOFF.md [skip netlify]
-1a89889 2026-07-25 Add photo galleries to the last 6 development pages
 ```
 
 <!-- AUTOGEN:END -->

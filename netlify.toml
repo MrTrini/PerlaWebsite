@@ -80,3 +80,17 @@
   to = "https://perlalutchman.com/:splat"
   status = 301
   force = true
+
+# Netlify does NOT add noindex to branch deploys or deploy previews by default -
+# verified 2026-07-26, preview--perlalutchman.netlify.app returned no
+# X-Robots-Tag at all. Without this, every preview is a crawlable duplicate of
+# the whole site. Context-scoped so production is unaffected.
+[[context.branch-deploy.headers]]
+  for = "/*"
+  [context.branch-deploy.headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+[[context.deploy-preview.headers]]
+  for = "/*"
+  [context.deploy-preview.headers.values]
+    X-Robots-Tag = "noindex, nofollow"

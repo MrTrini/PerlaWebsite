@@ -22,11 +22,11 @@ in it.
 
 ## Repo State (auto-generated)
 
-- Generated: `2026-07-27 11:44 UTC`
-- `preview` HEAD: `27e22ea` (2026-07-27) Regenerate HANDOFF.md for the search page; label HEAD by actual branch
-- Total commits: 52
+- Generated: `2026-07-27 11:51 UTC`
+- `preview` HEAD: `66be1b7` (2026-07-27) HANDOFF.md: point back at CLAUDE.md RULE 0
+- Total commits: 53
 - Area pages: **6** | Development pages: **12** | Galleries: **12** (193 photos)
-- Analytics: G-3PX7D1X143 on 24/24 pages
+- Analytics: G-3PX7D1X143 on 23/23 pages
 
 ### Root files
 
@@ -82,6 +82,7 @@ in it.
 ### Recent commits
 
 ```
+66be1b7 2026-07-27 HANDOFF.md: point back at CLAUDE.md RULE 0
 27e22ea 2026-07-27 Regenerate HANDOFF.md for the search page; label HEAD by actual branch
 d7cb970 2026-07-26 Fix preview noindex: use context build commands, not context headers
 fad586e 2026-07-26 noindex branch deploys and deploy previews
@@ -93,7 +94,6 @@ f35dc09 2026-07-26 Rewrite page titles and meta descriptions to fit search resul
 4a68e9c 2026-07-26 Social previews: JPG og:image cards, og:url and twitter:card on every page
 6dea479 2026-07-26 docs: auto-update HANDOFF.md
 9b0ec95 2026-07-26 Add cache + security headers, a real 404 page, and remove stale LinkedIn links
-455c614 2026-07-26 docs: auto-update HANDOFF.md
 ```
 
 <!-- AUTOGEN:END -->

@@ -69,3 +69,14 @@
     X-Frame-Options = "SAMEORIGIN"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "geolocation=(), microphone=(), camera=(), payment=()"
+
+# The default Netlify subdomain serves the whole production site, so without this
+# every page is reachable at two domains. Canonicals already point at the custom
+# domain, but not serving it twice is stronger than relying on canonicals alone.
+# Branch deploys (preview--perlalutchman.netlify.app) are a different host and
+# are unaffected.
+[[redirects]]
+  from = "https://perlalutchman.netlify.app/*"
+  to = "https://perlalutchman.com/:splat"
+  status = 301
+  force = true

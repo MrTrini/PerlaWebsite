@@ -19,18 +19,18 @@ in it.
 
 ## Repo State (auto-generated)
 
-- Generated: `2026-07-27 02:07 UTC`
-- `main` HEAD: `2832fc2` (2026-07-26) docs: auto-update HANDOFF.md
-- Total commits: 47
+- Generated: `2026-07-27 02:53 UTC`
+- `main` HEAD: `74803d3` (2026-07-26) Add /search/ property search page with MIAMIRE Matrix IDX embed
+- Total commits: 48
 - Area pages: **6** | Development pages: **12** | Galleries: **12** (193 photos)
 - Analytics: G-3PX7D1X143 on 24/24 pages
 
 ### Root files
 
-- `404.html` (86 lines) Page Not Found | Perla Lutchman, Luxury Real Estate Miami
-- `branding.html` (393 lines) Perla Lutchman | Brand Strategy &amp; Consulting
-- `index.html` (598 lines) Perla Lutchman | Luxury Real Estate, Miami
-- `landing.html` (101 lines) Perla Lutchman | Brand Strategy &amp; Luxury Real Estate — Miami
+- `404.html` (92 lines) Page Not Found | Perla Lutchman, Luxury Real Estate Miami
+- `branding.html` (399 lines) Perla Lutchman | Brand Strategy &amp; Consulting
+- `index.html` (604 lines) Perla Lutchman | Luxury Real Estate, Miami
+- `landing.html` (107 lines) Perla Lutchman | Brand Strategy &amp; Luxury Real Estate — Miami
 
 ### Netlify redirects
 
@@ -38,6 +38,7 @@ in it.
 - `/landing.html` -> `/` (301)
 - `/HANDOFF.md` -> `/404.html` (404)
 - `/tools/*` -> `/404.html` (404)
+- `https://perlalutchman.netlify.app/*` -> `https://perlalutchman.com/:splat` (301)
 
 ### Hidden homepage sections
 
@@ -78,6 +79,7 @@ in it.
 ### Recent commits
 
 ```
+74803d3 2026-07-26 Add /search/ property search page with MIAMIRE Matrix IDX embed
 2832fc2 2026-07-26 docs: auto-update HANDOFF.md
 f35dc09 2026-07-26 Rewrite page titles and meta descriptions to fit search result limits
 33b2238 2026-07-26 docs: auto-update HANDOFF.md
@@ -89,7 +91,6 @@ f0361c3 2026-07-25 Clear the last two consistency checks: llms.txt and README
 2d4e2ad 2026-07-25 Merge pull request #1 from MrTrini/MrTrini-patch-1
 eecbf19 2026-07-26 docs: auto-update HANDOFF.md [skip netlify]
 1a89889 2026-07-25 Add photo galleries to the last 6 development pages
-ea8a67a 2026-07-25 Strip HANDOFF.md to the generated site inventory only
 ```
 
 <!-- AUTOGEN:END -->

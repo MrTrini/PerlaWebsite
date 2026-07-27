@@ -6,6 +6,12 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3PX7D1X143"></script>
 <script>
+  // Measure the production hostname only. Preview builds on netlify.app and any
+  // local server opt out via gtag's official disable flag, so they never send
+  // data at all rather than being collected and filtered afterwards.
+  if (!/(^|\.)perlalutchman\.com$/.test(location.hostname)) {
+    window['ga-disable-G-3PX7D1X143'] = true;
+  }
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());

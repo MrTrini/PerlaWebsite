@@ -22,9 +22,9 @@ in it.
 
 ## Repo State (auto-generated)
 
-- Generated: `2026-07-27 11:51 UTC`
-- `preview` HEAD: `66be1b7` (2026-07-27) HANDOFF.md: point back at CLAUDE.md RULE 0
-- Total commits: 53
+- Generated: `2026-07-27 23:26 UTC`
+- `preview` HEAD: `2605c28` (2026-07-27) Remove the Matrix IDX search page; keep the infrastructure work
+- Total commits: 54
 - Area pages: **6** | Development pages: **12** | Galleries: **12** (193 photos)
 - Analytics: G-3PX7D1X143 on 23/23 pages
 
@@ -32,7 +32,7 @@ in it.
 
 - `404.html` (92 lines) Page Not Found | Perla Lutchman, Luxury Real Estate Miami
 - `branding.html` (399 lines) Perla Lutchman | Brand Strategy &amp; Consulting
-- `index.html` (604 lines) Perla Lutchman | Luxury Real Estate, Miami
+- `index.html` (606 lines) Perla Lutchman | Luxury Real Estate, Miami
 - `landing.html` (107 lines) Perla Lutchman | Brand Strategy &amp; Luxury Real Estate — Miami
 
 ### Netlify redirects
@@ -82,6 +82,7 @@ in it.
 ### Recent commits
 
 ```
+2605c28 2026-07-27 Remove the Matrix IDX search page; keep the infrastructure work
 66be1b7 2026-07-27 HANDOFF.md: point back at CLAUDE.md RULE 0
 27e22ea 2026-07-27 Regenerate HANDOFF.md for the search page; label HEAD by actual branch
 d7cb970 2026-07-26 Fix preview noindex: use context build commands, not context headers
@@ -93,7 +94,6 @@ f35dc09 2026-07-26 Rewrite page titles and meta descriptions to fit search resul
 33b2238 2026-07-26 docs: auto-update HANDOFF.md
 4a68e9c 2026-07-26 Social previews: JPG og:image cards, og:url and twitter:card on every page
 6dea479 2026-07-26 docs: auto-update HANDOFF.md
-9b0ec95 2026-07-26 Add cache + security headers, a real 404 page, and remove stale LinkedIn links
 ```
 
 <!-- AUTOGEN:END -->

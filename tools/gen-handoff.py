@@ -184,11 +184,21 @@ def build():
     a("### Consistency checks")
     a("")
     issues = []
-    expected = (
-        ["https://perlalutchman.com/"]
-        + [f"https://perlalutchman.com/areas/{x['slug']}/" for x in areas]
-        + [f"https://perlalutchman.com/developments/{x['slug']}/" for x in devs]
-    )
+    # Derive the expected sitemap from the pages themselves rather than a hardcoded
+    # list, so root-level pages (e.g. /search/) are covered without editing this file.
+    expected = []
+    for page in sorted(ROOT.rglob("*.html")):
+        if ".git" in page.parts:
+            continue
+        if "noindex" in page.read_text(encoding="utf-8", errors="ignore"):
+            continue
+        rel = page.relative_to(ROOT).as_posix()
+        if rel == "index.html":
+            expected.append("https://perlalutchman.com/")
+        elif rel.endswith("/index.html"):
+            expected.append(f"https://perlalutchman.com/{rel[:-10]}")
+        else:
+            expected.append(f"https://perlalutchman.com/{rel}")
     missing = [u for u in expected if u not in smap]
     orphan = [u for u in smap if u not in expected]
     if missing:

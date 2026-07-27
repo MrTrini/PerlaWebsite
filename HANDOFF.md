@@ -19,11 +19,11 @@ in it.
 
 ## Repo State (auto-generated)
 
-- Generated: `2026-07-26 11:43 UTC`
-- `main` HEAD: `f35dc09` (2026-07-26) Rewrite page titles and meta descriptions to fit search result limits
-- Total commits: 46
+- Generated: `2026-07-27 02:07 UTC`
+- `main` HEAD: `2832fc2` (2026-07-26) docs: auto-update HANDOFF.md
+- Total commits: 47
 - Area pages: **6** | Development pages: **12** | Galleries: **12** (193 photos)
-- Analytics: G-3PX7D1X143 on 23/23 pages
+- Analytics: G-3PX7D1X143 on 24/24 pages
 
 ### Root files
 
@@ -78,6 +78,7 @@ in it.
 ### Recent commits
 
 ```
+2832fc2 2026-07-26 docs: auto-update HANDOFF.md
 f35dc09 2026-07-26 Rewrite page titles and meta descriptions to fit search result limits
 33b2238 2026-07-26 docs: auto-update HANDOFF.md
 4a68e9c 2026-07-26 Social previews: JPG og:image cards, og:url and twitter:card on every page
@@ -89,7 +90,6 @@ f0361c3 2026-07-25 Clear the last two consistency checks: llms.txt and README
 eecbf19 2026-07-26 docs: auto-update HANDOFF.md [skip netlify]
 1a89889 2026-07-25 Add photo galleries to the last 6 development pages
 ea8a67a 2026-07-25 Strip HANDOFF.md to the generated site inventory only
-606f9bc 2026-07-25 docs: auto-update HANDOFF.md [skip netlify]
 ```
 
 <!-- AUTOGEN:END -->

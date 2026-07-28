@@ -22,9 +22,9 @@ in it.
 
 ## Repo State (auto-generated)
 
-- Generated: `2026-07-28 11:43 UTC`
-- `preview` HEAD: `20a085a` (2026-07-28) Version the signature filename so the fix reaches cached browsers
-- Total commits: 58
+- Generated: `2026-07-28 21:37 UTC`
+- `preview` HEAD: `c136205` (2026-07-28) Fix signature render: .split img was cropping it to a 4:5 box
+- Total commits: 59
 - Area pages: **6** | Development pages: **12** | Galleries: **12** (193 photos)
 - Analytics: G-3PX7D1X143 on 23/23 pages
 
@@ -83,6 +83,7 @@ in it.
 ### Recent commits
 
 ```
+c136205 2026-07-28 Fix signature render: .split img was cropping it to a 4:5 box
 20a085a 2026-07-28 Version the signature filename so the fix reaches cached browsers
 7c1ec35 2026-07-27 Fix the signature SVG: its viewBox did not contain its own artwork
 cbaef63 2026-07-27 Hero: use Justin's replacement files; move signature into the stats row
@@ -94,7 +95,6 @@ d7cb970 2026-07-26 Fix preview noindex: use context build commands, not context 
 fad586e 2026-07-26 noindex branch deploys and deploy previews
 227e688 2026-07-26 Preview-safe analytics + stop serving the site on two domains
 74803d3 2026-07-26 Add /search/ property search page with MIAMIRE Matrix IDX embed
-2832fc2 2026-07-26 docs: auto-update HANDOFF.md
 ```
 
 <!-- AUTOGEN:END -->

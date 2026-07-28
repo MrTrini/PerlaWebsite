@@ -22,9 +22,9 @@ in it.
 
 ## Repo State (auto-generated)
 
-- Generated: `2026-07-27 23:26 UTC`
-- `preview` HEAD: `2605c28` (2026-07-27) Remove the Matrix IDX search page; keep the infrastructure work
-- Total commits: 54
+- Generated: `2026-07-28 00:51 UTC`
+- `preview` HEAD: `5fbb81c` (2026-07-27) Homepage: recomposite sharp hero (daytime skyline) + add Perla signature to About
+- Total commits: 55
 - Area pages: **6** | Development pages: **12** | Galleries: **12** (193 photos)
 - Analytics: G-3PX7D1X143 on 23/23 pages
 
@@ -32,7 +32,7 @@ in it.
 
 - `404.html` (92 lines) Page Not Found | Perla Lutchman, Luxury Real Estate Miami
 - `branding.html` (399 lines) Perla Lutchman | Brand Strategy &amp; Consulting
-- `index.html` (606 lines) Perla Lutchman | Luxury Real Estate, Miami
+- `index.html` (610 lines) Perla Lutchman | Luxury Real Estate, Miami
 - `landing.html` (107 lines) Perla Lutchman | Brand Strategy &amp; Luxury Real Estate — Miami
 
 ### Netlify redirects
@@ -42,6 +42,7 @@ in it.
 - `/HANDOFF.md` -> `/404.html` (404)
 - `/tools/*` -> `/404.html` (404)
 - `https://perlalutchman.netlify.app/*` -> `https://perlalutchman.com/:splat` (301)
+- `/assets/images/perla-real-estate-hero-master-1916x821.png` -> `/404.html` (404)
 
 ### Hidden homepage sections
 
@@ -82,6 +83,7 @@ in it.
 ### Recent commits
 
 ```
+5fbb81c 2026-07-27 Homepage: recomposite sharp hero (daytime skyline) + add Perla signature to About
 2605c28 2026-07-27 Remove the Matrix IDX search page; keep the infrastructure work
 66be1b7 2026-07-27 HANDOFF.md: point back at CLAUDE.md RULE 0
 27e22ea 2026-07-27 Regenerate HANDOFF.md for the search page; label HEAD by actual branch
@@ -93,7 +95,6 @@ fad586e 2026-07-26 noindex branch deploys and deploy previews
 f35dc09 2026-07-26 Rewrite page titles and meta descriptions to fit search result limits
 33b2238 2026-07-26 docs: auto-update HANDOFF.md
 4a68e9c 2026-07-26 Social previews: JPG og:image cards, og:url and twitter:card on every page
-6dea479 2026-07-26 docs: auto-update HANDOFF.md
 ```
 
 <!-- AUTOGEN:END -->

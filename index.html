@@ -174,7 +174,11 @@
   .stats{display:flex;gap:2.5rem;padding-top:.5rem;flex-wrap:wrap}
   .stats b{font-family:var(--title-f);font-size:2.2rem;font-weight:400;display:block;line-height:1}
   .stats small{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-  .signature{display:block;width:230px;max-width:62%;height:auto;margin:1.9rem 0 .2rem;opacity:.92}
+  /* signature is the last item in the stats row: margin-left:auto parks it at the
+     right-hand end of whichever line it wraps onto, beside 'Miami' */
+  .signature{display:block;width:clamp(160px,15vw,215px);height:auto;opacity:.92;
+    margin-left:auto;align-self:center}
+  @media(max-width:860px){.signature{margin-left:0;margin-top:.4rem}}
 
   /* whats new */
   .news{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
@@ -497,8 +501,8 @@
         <div><b>12+</b><small>Years Experience</small></div>
         <div><b>MBA</b><small>Business Strategy</small></div>
         <div><b>Miami</b><small>Luxury &amp; Pre-Construction</small></div>
+        <img class="signature" src="assets/images/perla-signature.svg" alt="Perla Lutchman signature" width="230" height="116" loading="lazy" decoding="async">
       </div>
-      <img class="signature" src="assets/images/perla-signature.svg" alt="Perla Lutchman signature" width="230" height="116" loading="lazy" decoding="async">
     </div>
     <div class="imgwrap reveal">
       <picture>

@@ -133,7 +133,10 @@
   /* generic split */
   .split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
   .split .imgwrap picture{display:block;width:100%}
-  .split img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+  /* scoped to .imgwrap: this is the portrait treatment. Unscoped, it also caught
+     the signature <img> (specificity 0,1,1 beats .signature 0,1,0) and forced it
+     into a 4:5 box with object-fit:cover, cropping it to a giant fragment. */
+  .split .imgwrap img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
   .split .body>*+*{margin-top:1.2rem}
   @media(max-width:860px){.split{grid-template-columns:1fr}.split .imgwrap{max-width:440px;margin:0 auto}}
   /* centered "Why Invest" intro */
@@ -177,7 +180,7 @@
   /* signature is the last item in the stats row: margin-left:auto parks it at the
      right-hand end of whichever line it wraps onto, beside 'Miami' */
   .signature{display:block;width:clamp(160px,15vw,215px);height:auto;opacity:.92;
-    margin-left:auto;align-self:center}
+    margin-left:auto;align-self:center;aspect-ratio:auto;object-fit:contain;flex:0 0 auto}
   @media(max-width:860px){.signature{margin-left:0;margin-top:.4rem}}
 
   /* whats new */

@@ -22,9 +22,9 @@ in it.
 
 ## Repo State (auto-generated)
 
-- Generated: `2026-07-28 11:28 UTC`
-- `preview` HEAD: `7c1ec35` (2026-07-27) Fix the signature SVG: its viewBox did not contain its own artwork
-- Total commits: 57
+- Generated: `2026-07-28 11:43 UTC`
+- `preview` HEAD: `20a085a` (2026-07-28) Version the signature filename so the fix reaches cached browsers
+- Total commits: 58
 - Area pages: **6** | Development pages: **12** | Galleries: **12** (193 photos)
 - Analytics: G-3PX7D1X143 on 23/23 pages
 
@@ -32,7 +32,7 @@ in it.
 
 - `404.html` (92 lines) Page Not Found | Perla Lutchman, Luxury Real Estate Miami
 - `branding.html` (399 lines) Perla Lutchman | Brand Strategy &amp; Consulting
-- `index.html` (610 lines) Perla Lutchman | Luxury Real Estate, Miami
+- `index.html` (613 lines) Perla Lutchman | Luxury Real Estate, Miami
 - `landing.html` (107 lines) Perla Lutchman | Brand Strategy &amp; Luxury Real Estate — Miami
 
 ### Netlify redirects
@@ -83,6 +83,7 @@ in it.
 ### Recent commits
 
 ```
+20a085a 2026-07-28 Version the signature filename so the fix reaches cached browsers
 7c1ec35 2026-07-27 Fix the signature SVG: its viewBox did not contain its own artwork
 cbaef63 2026-07-27 Hero: use Justin's replacement files; move signature into the stats row
 5fbb81c 2026-07-27 Homepage: recomposite sharp hero (daytime skyline) + add Perla signature to About
@@ -94,7 +95,6 @@ fad586e 2026-07-26 noindex branch deploys and deploy previews
 227e688 2026-07-26 Preview-safe analytics + stop serving the site on two domains
 74803d3 2026-07-26 Add /search/ property search page with MIAMIRE Matrix IDX embed
 2832fc2 2026-07-26 docs: auto-update HANDOFF.md
-f35dc09 2026-07-26 Rewrite page titles and meta descriptions to fit search result limits
 ```
 
 <!-- AUTOGEN:END -->

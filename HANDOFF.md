@@ -22,9 +22,9 @@ in it.
 
 ## Repo State (auto-generated)
 
-- Generated: `2026-07-28 00:51 UTC`
-- `preview` HEAD: `5fbb81c` (2026-07-27) Homepage: recomposite sharp hero (daytime skyline) + add Perla signature to About
-- Total commits: 55
+- Generated: `2026-07-28 00:58 UTC`
+- `preview` HEAD: `cbaef63` (2026-07-27) Hero: use Justin's replacement files; move signature into the stats row
+- Total commits: 56
 - Area pages: **6** | Development pages: **12** | Galleries: **12** (193 photos)
 - Analytics: G-3PX7D1X143 on 23/23 pages
 
@@ -83,6 +83,7 @@ in it.
 ### Recent commits
 
 ```
+cbaef63 2026-07-27 Hero: use Justin's replacement files; move signature into the stats row
 5fbb81c 2026-07-27 Homepage: recomposite sharp hero (daytime skyline) + add Perla signature to About
 2605c28 2026-07-27 Remove the Matrix IDX search page; keep the infrastructure work
 66be1b7 2026-07-27 HANDOFF.md: point back at CLAUDE.md RULE 0
@@ -94,7 +95,6 @@ fad586e 2026-07-26 noindex branch deploys and deploy previews
 2832fc2 2026-07-26 docs: auto-update HANDOFF.md
 f35dc09 2026-07-26 Rewrite page titles and meta descriptions to fit search result limits
 33b2238 2026-07-26 docs: auto-update HANDOFF.md
-4a68e9c 2026-07-26 Social previews: JPG og:image cards, og:url and twitter:card on every page
 ```
 
 <!-- AUTOGEN:END -->

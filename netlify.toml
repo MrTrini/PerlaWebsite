@@ -98,3 +98,19 @@
 
 [context.deploy-preview]
   command = "printf '/*\n  X-Robots-Tag: noindex, nofollow\n' > _headers"
+
+# The 1916x821 hero master is committed for reproducibility (see CLAUDE.md §3)
+# but is a source file, not something to serve.
+[[redirects]]
+  from = "/assets/images/perla-hero-master-3832x1642.webp"
+  to = "/404.html"
+  status = 404
+  force = true
+
+# Development renamed 2026-07-27: "Domus Brickell Park" was never its name, it is
+# "Domus Brickell Center". The slug changed with it, so the old URL is redirected.
+[[redirects]]
+  from = "/developments/domus-brickell-park/*"
+  to = "/developments/domus-brickell-center/:splat"
+  status = 301
+  force = true

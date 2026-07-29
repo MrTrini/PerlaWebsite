@@ -28,8 +28,8 @@ the repo right now, not why any of it is the way it is.
 ## Repo State (auto-generated)
 
 - Generated: `2026-07-29 09:30 UTC`
-- `main` HEAD: `54cc7d5` (2026-07-27) docs: auto-update HANDOFF.md
-- Total commits: 55
+- `main` HEAD: `be2e565` (2026-07-29) Merge preview: hero rebuild, signature fixes, Domus rename
+- Total commits: 65
 - Area pages: **6** | Development pages: **12** | Galleries: **12** (193 photos)
 - Analytics: G-3PX7D1X143 on 23/23 pages
 
@@ -89,18 +89,18 @@ the repo right now, not why any of it is the way it is.
 ### Recent commits
 
 ```
+be2e565 2026-07-29 Merge preview: hero rebuild, signature fixes, Domus rename
+4529337 2026-07-28 Hero: rebuild from the 2x master - genuinely sharper, not upscaled
+e0c7f5e 2026-07-28 HANDOFF.md: point clearly at CLAUDE.md as the recovery document
+24c0233 2026-07-28 Rename the Domus URL slug to match the corrected name
+fb0367e 2026-07-28 Correct the development name: Domus Brickell Park -> Domus Brickell Center
+c136205 2026-07-28 Fix signature render: .split img was cropping it to a 4:5 box
+20a085a 2026-07-28 Version the signature filename so the fix reaches cached browsers
+7c1ec35 2026-07-27 Fix the signature SVG: its viewBox did not contain its own artwork
+cbaef63 2026-07-27 Hero: use Justin's replacement files; move signature into the stats row
+5fbb81c 2026-07-27 Homepage: recomposite sharp hero (daytime skyline) + add Perla signature to About
 54cc7d5 2026-07-27 docs: auto-update HANDOFF.md
 2605c28 2026-07-27 Remove the Matrix IDX search page; keep the infrastructure work
-66be1b7 2026-07-27 HANDOFF.md: point back at CLAUDE.md RULE 0
-27e22ea 2026-07-27 Regenerate HANDOFF.md for the search page; label HEAD by actual branch
-d7cb970 2026-07-26 Fix preview noindex: use context build commands, not context headers
-fad586e 2026-07-26 noindex branch deploys and deploy previews
-227e688 2026-07-26 Preview-safe analytics + stop serving the site on two domains
-74803d3 2026-07-26 Add /search/ property search page with MIAMIRE Matrix IDX embed
-2832fc2 2026-07-26 docs: auto-update HANDOFF.md
-f35dc09 2026-07-26 Rewrite page titles and meta descriptions to fit search result limits
-33b2238 2026-07-26 docs: auto-update HANDOFF.md
-4a68e9c 2026-07-26 Social previews: JPG og:image cards, og:url and twitter:card on every page
 ```
 
 <!-- AUTOGEN:END -->

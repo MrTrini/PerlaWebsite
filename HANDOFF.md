@@ -27,9 +27,9 @@ the repo right now, not why any of it is the way it is.
 
 ## Repo State (auto-generated)
 
-- Generated: `2026-07-29 09:30 UTC`
-- `main` HEAD: `be2e565` (2026-07-29) Merge preview: hero rebuild, signature fixes, Domus rename
-- Total commits: 65
+- Generated: `2026-07-29 09:31 UTC`
+- `main` HEAD: `075371c` (2026-07-29) Regenerate HANDOFF.md after merge
+- Total commits: 66
 - Area pages: **6** | Development pages: **12** | Galleries: **12** (193 photos)
 - Analytics: G-3PX7D1X143 on 23/23 pages
 
@@ -89,6 +89,7 @@ the repo right now, not why any of it is the way it is.
 ### Recent commits
 
 ```
+075371c 2026-07-29 Regenerate HANDOFF.md after merge
 be2e565 2026-07-29 Merge preview: hero rebuild, signature fixes, Domus rename
 4529337 2026-07-28 Hero: rebuild from the 2x master - genuinely sharper, not upscaled
 e0c7f5e 2026-07-28 HANDOFF.md: point clearly at CLAUDE.md as the recovery document
@@ -100,7 +101,6 @@ c136205 2026-07-28 Fix signature render: .split img was cropping it to a 4:5 box
 cbaef63 2026-07-27 Hero: use Justin's replacement files; move signature into the stats row
 5fbb81c 2026-07-27 Homepage: recomposite sharp hero (daytime skyline) + add Perla signature to About
 54cc7d5 2026-07-27 docs: auto-update HANDOFF.md
-2605c28 2026-07-27 Remove the Matrix IDX search page; keep the infrastructure work
 ```
 
 <!-- AUTOGEN:END -->

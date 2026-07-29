@@ -27,9 +27,9 @@ the repo right now, not why any of it is the way it is.
 
 ## Repo State (auto-generated)
 
-- Generated: `2026-07-28 21:45 UTC`
-- `preview` HEAD: `24c0233` (2026-07-28) Rename the Domus URL slug to match the corrected name
-- Total commits: 61
+- Generated: `2026-07-29 02:28 UTC`
+- `preview` HEAD: `e0c7f5e` (2026-07-28) HANDOFF.md: point clearly at CLAUDE.md as the recovery document
+- Total commits: 62
 - Area pages: **6** | Development pages: **12** | Galleries: **12** (193 photos)
 - Analytics: G-3PX7D1X143 on 23/23 pages
 
@@ -47,7 +47,7 @@ the repo right now, not why any of it is the way it is.
 - `/HANDOFF.md` -> `/404.html` (404)
 - `/tools/*` -> `/404.html` (404)
 - `https://perlalutchman.netlify.app/*` -> `https://perlalutchman.com/:splat` (301)
-- `/assets/images/perla-real-estate-hero-master-1916x821.png` -> `/404.html` (404)
+- `/assets/images/perla-hero-master-3832x1642.webp` -> `/404.html` (404)
 - `/developments/domus-brickell-park/*` -> `/developments/domus-brickell-center/:splat` (301)
 
 ### Hidden homepage sections
@@ -89,6 +89,7 @@ the repo right now, not why any of it is the way it is.
 ### Recent commits
 
 ```
+e0c7f5e 2026-07-28 HANDOFF.md: point clearly at CLAUDE.md as the recovery document
 24c0233 2026-07-28 Rename the Domus URL slug to match the corrected name
 fb0367e 2026-07-28 Correct the development name: Domus Brickell Park -> Domus Brickell Center
 c136205 2026-07-28 Fix signature render: .split img was cropping it to a 4:5 box
@@ -100,7 +101,6 @@ cbaef63 2026-07-27 Hero: use Justin's replacement files; move signature into the
 66be1b7 2026-07-27 HANDOFF.md: point back at CLAUDE.md RULE 0
 27e22ea 2026-07-27 Regenerate HANDOFF.md for the search page; label HEAD by actual branch
 d7cb970 2026-07-26 Fix preview noindex: use context build commands, not context headers
-fad586e 2026-07-26 noindex branch deploys and deploy previews
 ```
 
 <!-- AUTOGEN:END -->
